@@ -1,0 +1,12 @@
+# python stuff
+*.pyc
+poetry.lock
+places.ipynb
+**__pycache__**
+
+*.key
+*DS_Store
+*sublime-workspace
+*.mov
+*.xlsx
+*.xls
