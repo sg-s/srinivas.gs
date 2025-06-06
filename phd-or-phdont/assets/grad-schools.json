@@ -1,0 +1,25 @@
+{
+    "grad-schools": [
+        {
+            "name": "University of California, Berkeley",
+            "location": "Berkeley, CA",
+            "tuition": 50000,
+            "stipend": 50000,
+            "rent": 1000
+        },
+        {
+            "name": "Yale University",
+            "location": "New Haven, CT",
+            "tuition": 50000,
+            "stipend": 50000,
+            "rent": 1000
+        },
+        {
+            "name": "Harvard University",
+            "location": "Cambridge, MA",
+            "tuition": 50000,
+            "stipend": 50000,
+            "rent": 1000
+        }
+    ]
+}

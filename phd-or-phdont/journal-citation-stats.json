@@ -1,0 +1,38 @@
+{
+    "Nature": {
+        "rate": 3.2,
+        "lag": 6
+    },
+    "NIPS": {
+        "rate": 2.1,
+        "lag": 8
+    },
+    "Science": {
+        "rate": 2.8,
+        "lag": 7
+    },
+    "Neuron": {
+        "rate": 1.7,
+        "lag": 7
+    },
+    "Cell": {
+        "rate": 2.0,
+        "lag": 7
+    },
+    "eLife": {
+        "rate": 1.2,
+        "lag": 8
+    },
+    "J.Soc.Stat.": {
+        "rate": 0.7,
+        "lag": 10
+    },
+    "Proc. Far. T. Sci.": {
+        "rate": 0.1,
+        "lag": 12
+    },
+    "J.R.Stat.Soc.": {
+        "rate": 0.5,
+        "lag": 11
+    }
+}
