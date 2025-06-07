@@ -121,11 +121,9 @@ class TimelineSection extends HTMLElement {
         const months = parseInt(this.getAttribute('months') || '12', 10);
 
 
-        const pxPerMonth = window.innerHeight / 12;
+        const pxPerMonth = getMonthsToPx();
         this.style.height = (months * pxPerMonth) + 'px';
         this.style.position = 'relative';
-        // this.style.background = 'rgb(174, 174, 174)';
-        // this.style.boxShadow = '0 10px 24px 0 rgba(0,0,0,0.10), 0 5px 6px 0 rgba(255,78,80,0.10)';
         this.style.marginBottom = '1.5rem';
         this.style.display = 'block';
         this.style.width = '100%';
@@ -150,9 +148,15 @@ class TimelineSection extends HTMLElement {
 }
 customElements.define('timeline-section', TimelineSection);
 
-// Helper function for px/month conversion
+// --- Utility: px/month conversion (used by ruler, sections, and money logic) ---
 function getMonthsToPx() {
-    return window.innerHeight / 12;
+    const min = 100;
+    const max = 120;
+    let px = window.innerHeight / 12;
+    if (px < min) return min;
+    if (px > max) return max;
+    return px;
+
 }
 
 // TimelineElement: base class for timeline cards

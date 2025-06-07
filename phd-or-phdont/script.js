@@ -39,10 +39,7 @@ function eraseSubtitle() {
 
 typeSubtitle();
 
-// --- Utility: px/month conversion (used by ruler, sections, and money logic) ---
-function getMonthsToPx() {
-    return window.innerHeight / 12;
-}
+
 
 // --- Vertical Ruler Logic ---
 // Draws a vertical ruler with month and year ticks, aligned to px/month logic
