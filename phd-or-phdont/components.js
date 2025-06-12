@@ -579,26 +579,30 @@ class TaxesDisplay extends HTMLElement {
     }
 
     _findSectionYear() {
-        // Find parent timeline-section and map its id to a year
+        // Find parent timeline-section
         let parent = this.parentElement;
         while (parent && parent.tagName && parent.tagName.toLowerCase() !== 'timeline-section') {
             parent = parent.parentElement;
         }
         if (!parent) return null;
-        const sectionId = parent.getAttribute('id');
-        // Hardcoded mapping from section id to year
-        const sectionYearMap = {
-            'phd': 2010,
-            'postdoc': 2017,
-            'phd-first-job': 2011,
-            'phd-second-job': 2013,
-            'no-phd-first-job': 2011,
-            'no-phd-second-job': 2013,
-            'no-phd-third-job': 2016,
-            'no-phd-laid-off': 2016,
-            'no-phd-fourth-job': 2022
-        };
-        return sectionYearMap[sectionId] || null;
+        // Timeline starts at August 2010
+        const baseYear = 2010;
+        const baseMonth = 7; // 0-based (August)
+        // Sum months of all previous timeline-section siblings
+        let monthsOffset = 0;
+        let sibling = parent.previousElementSibling;
+        while (sibling) {
+            if (sibling.tagName && sibling.tagName.toLowerCase() === 'timeline-section') {
+                let months = parseInt(sibling.getAttribute('months') || '0', 10);
+                if (!isNaN(months)) monthsOffset += months;
+            }
+            sibling = sibling.previousElementSibling;
+        }
+        // Calculate the start date for this section
+        let startMonth = baseMonth + monthsOffset;
+        let year = baseYear + Math.floor(startMonth / 12);
+        // let month = startMonth % 12; // If you need the month
+        return year;
     }
 
     async _fetchTaxData() {

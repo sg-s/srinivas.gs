@@ -627,10 +627,15 @@ window.addEventListener('resize', handleMobileOverlay);
         const url = `${location.origin}${location.pathname}#${hash}`;
         const input = document.getElementById('share-link');
         if (input) input.value = url;
-        // Update the address bar hash without reloading
-        if (window.location.hash !== `#${hash}`) {
-            history.replaceState(null, '', `#${hash}`);
-        }
+
+        // note: disabling this for now because it leads to a lot of issues
+        // with managing state. disabling this also allows me to add a 
+        // reload button (and support cmd+r which reloads the page and randomizes choices)
+
+        // // Update the address bar hash without reloading
+        // if (window.location.hash !== `#${hash}`) {
+        //     history.replaceState(null, '', `#${hash}`);
+        // }
     }
 
     function observeCyclers() {
