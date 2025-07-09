@@ -1,3 +1,9 @@
+"""
+This script reads a JSON file describing portfolio items and renders Bootstrap card HTML for each item using Jinja2 templates.
+If output_path is given, writes the HTML to that file (just the cards),
+else writes the full HTML page to index.html in the same directory as json_path.
+"""
+
 import json
 import os
 from jinja2 import Environment, FileSystemLoader
