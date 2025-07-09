@@ -15,7 +15,11 @@ import os
 
 
 class PortfolioHandler(FileSystemEventHandler):
+    """handle changes to portfolio/index.json"""
+
     def on_modified(self, event):
+        """handle changes to portfolio/index.json"""
+
         if event.src_path.endswith("portfolio/index.json"):
             print("Detected change in index.json, rebuilding portfolio...")
             subprocess.run(["python", "src/render_portfolio.py"])

@@ -20,6 +20,8 @@ def render_portfolio_cards(json_path="portfolio/index.json"):
 
     # Sort items by start_year (ascending)
     def get_start_year(item):
+        """get the start year of an item"""
+
         try:
             return int(item.get("start_year", 9999))
         except Exception:
