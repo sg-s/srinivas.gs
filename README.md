@@ -1,5 +1,5 @@
 <a name = "code"></a>
-# Portfolio
+# [Portfolio →](./portfolio)
 
 <div class = "sidenote">Here, I'm writing part of the C++ code underling <a href = "https://github.com/sg-s/xolotl">xolotl</a></div>
 
@@ -12,7 +12,7 @@ Your browser does not support the video tag.
 </div>
 
 
-You should look at my [portfolio](./portfolio/) for other projects I'm working on. Many other things I've worked on are on my [github page](https://github.com/sg-s/).
+You should look at my [portfolio](./portfolio/) for projects I've (mostly) done. Many other things I'm working on right now are on my [github page](https://github.com/sg-s/).
 
 <a name = "publications"></a>
 # Publications
