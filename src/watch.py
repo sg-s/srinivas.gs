@@ -1,3 +1,12 @@
+"""
+Watches for changes to portfolio/index.json and automatically rebuilds the portfolio by running src/render_portfolio.py when changes are detected.
+
+Usage:
+    python src/watch.py
+
+This script uses watchdog to monitor the index.json file and triggers a rebuild on modification.
+"""
+
 import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
