@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Check code using ruff
         uses: chartboost/ruff-action@v1
@@ -35,28 +35,24 @@ jobs:
 
 
 
-  standard_tests:
+  test_build:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: true
-      matrix:
-        python-version: [3.11,3.12]
         
     needs: [inital_checks]
     steps:
-      - uses: actions/checkout@v3      
 
+        - uses: actions/checkout@v4
+  
+        - name: Install uv
+          uses: astral-sh/setup-uv@v6
+          with:
+            version: "0.7.20"
 
-      - uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
+        - name: Set up Python
+          run: uv python install
 
-      - name: Install and configure Poetry
-        uses: snok/install-poetry@v1
-
-      - name: Make site
-        run: |
-          make build
+        - name: build site
+          run: make build
 
 
 

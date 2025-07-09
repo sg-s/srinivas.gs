@@ -1,5 +1,5 @@
 <a name = "code"></a>
-# Code
+# [Portfolio →](./portfolio)
 
 <div class = "sidenote">Here, I'm writing part of the C++ code underling <a href = "https://github.com/sg-s/xolotl">xolotl</a></div>
 
@@ -12,22 +12,7 @@ Your browser does not support the video tag.
 </div>
 
 
-
-* [xolotl](https://github.com/sg-s/xolotl):
-A fast (written in C++), flexible (fully object oriented) and immediate (live manipulation in MATLAB) neuron and network simulator. Also on [Mathworks File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/79894-xolotl)
-
-* [puppeteer](https://github.com/sg-s/puppeteer):
-A pure MATLAB class to control and manipulate models, simulations, functions...anything
-
-* [kontroller](https://github.com/sg-s/kontroller#kontroller):
-A easy-to-use wrapper for MATLAB's DAQ toolbox
-
-* [crabsort](https://github.com/sg-s/crabsort):
-Interactive, automated extracellular spike sorting with machine learning
-
-
-
-All code here is [free software](http://www.fsf.org/about/what-is-free-software). You should look at my [github page](https://github.com/sg-s/) for other projects I'm working on.
+You should look at my [portfolio](./portfolio/) for projects I've (mostly) done. Many other things I'm working on right now are on my [github page](https://github.com/sg-s/).
 
 <a name = "publications"></a>
 # Publications

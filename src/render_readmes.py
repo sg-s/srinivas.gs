@@ -1,49 +1,50 @@
-""" this script finds all readme.md files in this repo,
-and converts them into HTML files for display"""
+"""
+This script finds all README.md files in this repository and converts them into HTML files for display. It generates a body.html from each README.md, then concatenates header.html, body.html, and footer.html into an index.html in the same directory, and finally removes the temporary body.html.
+"""
 
 import codecs
 import os
 
 import markdown
 
-all_paths = []
+if __name__ == "__main__":
+    all_paths = []
 
-for root, dirs, files in os.walk("./"):
-    for file in files:
-        if file.endswith("README.md"):
-            all_paths.append(os.path.join(root, file))
+    for root, _, files in os.walk("./"):
+        for file in files:
+            if file.endswith("README.md"):
+                all_paths.append(os.path.join(root, file))
 
+    for path in all_paths:
+        print(path, end=" ")
 
-for path in all_paths:
-    print(path, end=" ")
+        path_root = path.replace("README.md", "")
 
-    path_root = path.replace("README.md", "")
+        # make the html from README.md
+        input_file = codecs.open(path, mode="r", encoding="utf-8")
+        text = input_file.read()
+        html = markdown.markdown(text, extensions=["markdown.extensions.extra"])
 
-    # make the html from README.md
-    input_file = codecs.open(path, mode="r", encoding="utf-8")
-    text = input_file.read()
-    html = markdown.markdown(text, extensions=["markdown.extensions.extra"])
+        html = html.replace(
+            "<table>",
+            '<table id="example" class="display" cellspacing="0" width="80%">',
+        )
 
-    html = html.replace(
-        "<table>",
-        '<table id="example" class="display" cellspacing="0" width="80%">',
-    )
+        output_file = codecs.open(
+            path.replace("README.md", "body.html"), "w", encoding="utf-8"
+        )
+        output_file.write(html)
+        output_file.close()
 
-    output_file = codecs.open(
-        path.replace("README.md", "body.html"), "w", encoding="utf-8"
-    )
-    output_file.write(html)
-    output_file.close()
+        # cat the header and body and footer
+        filenames = ["header.html", "body.html", "footer.html"]
+        filenames = [path_root + filename for filename in filenames]
 
-    # cat the header and body and footer
-    filenames = ["header.html", "body.html", "footer.html"]
-    filenames = [path_root + filename for filename in filenames]
+        with open(path_root + "index.html", "w") as outfile:
+            for fname in filenames:
+                with open(fname) as infile:
+                    outfile.write(infile.read())
 
-    with open(path_root + "index.html", "w") as outfile:
-        for fname in filenames:
-            with open(fname) as infile:
-                outfile.write(infile.read())
+        os.remove(path_root + "body.html")
 
-    os.remove(path_root + "body.html")
-
-    print("✅ ")
+        print("✅ ")

@@ -2,27 +2,17 @@
 
 repo=$(shell basename $(CURDIR))
 
-.PHONY: build
-
-install: 
-	@echo "Installing srinivas.gs..."
-	@bash install.sh
-
-build: install
-	poetry run python src/render_readmes.py
-	poetry run python src/make_lists_from_json.py
+.PHONY: build portfolio
 
 
-python:
-	poetry run python src/make_python_lists.py
-	open lists/python/index.html
+portfolio:
+	uv run python src/render_portfolio.py
 
-youtube:
-	poetry run python src/make_youtube_list.py
-	open lists/youtube/index.html
+readmes:
+	uv run python src/render_readmes.py
+
+build: portfolio readmes
 
 
-jupyter:
-	@echo "Installing kernel  $(repo) in jupyter"
-	-yes | jupyter kernelspec uninstall $(repo)
-	poetry run python -m ipykernel install --user --name $(repo)
+serve:
+	uv run python src/reload.py

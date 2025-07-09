@@ -1,90 +1,524 @@
 {
-    "template": "card-img-left-badges",
+    "template": "card-img",
     "title": "Portfolio",
-    "lead_paragraph": "I like making things. Most things never see the light of day, but here are a few things that have both made it across the finish line and are not private.",
+    "lead_paragraph": "I like making things. This page is a collection of things I have made. Projects are sorted by start year. Click on a project to learn more.",
     "footer_text": "Arlington<br>Summer 2023",
-    "stylesheet": "../css/star-bs.css",
     "items": [
         {
-            "img": "../assets/X.png",
+            "title": "tubearchivist-hr",
+            "img": "./assets/tahr.webp",
+            "text": "A total rewrite of tubearchivist, a self-hosted YouTube archive, with support for tagging and embedding components in other apps.",
+            "tags": [
+                "bootstrap",
+                "fastapi",
+                "javascript",
+                "web-components",
+                "uvicorn",
+                "postgres"
+            ],
+            "start_year": "⚠️ in progress"
+        },
+        {
+            "title": "pyisx",
+            "img": "./assets/inscopix.png",
+            "text": "Pure python package for interacting with Inscopix data",
+            "tags": [
+                "python",
+                "neuroscience"
+            ],
+            "start_year": 2021,
+            "end_year": 2024,
+            "links": [
+                {
+                    "key": "Code",
+                    "value": "https://github.com/inscopix/pyisx"
+                },
+                {
+                    "key": "Docs",
+                    "value": "https://inscopix.github.io/pyisx/"
+                }
+            ]
+        },
+        {
+            "img": "./assets/ideas-qc.png",
+            "title": "IDEAS QC Report",
+            "text": "Interactive QC report for the IDEAS project",
+            "tags": [
+                "python",
+                "bokeh",
+                "neuroscience",
+                "visualization"
+            ],
+            "start_year": 2022,
+            "end_year": 2024,
+            "link": "https://inscopix.github.io/ideas-docs/tools/idps/qc_html/example-qc-report.html"
+        },
+        {
+            "img": "./assets/ideas-docs.png",
+            "title": "IDEAS Docs",
+            "text": "Documentation for the IDEAS project",
+            "tags": [
+                "python",
+                "mkdocs",
+                "neuroscience"
+            ],
+            "start_year": 2022,
+            "end_year": 2024,
+            "link": "https://inscopix.github.io/ideas-docs/"
+        },
+        {
+            "img": "./assets/thagomizer.png",
+            "title": "thagomizer",
+            "text": "General tools in python. Various other packages in python depend on this.",
+            "tags": [
+                "python"
+            ],
+            "start_year": 2025,
+            "link": "https://github.com/sg-s/thagomizer"
+        },
+        {
+            "title": "Spotenstein",
+            "text": "A self-hosted tech stack that allows you to press a button on your browser when watching a YouTube video and having that audio be added to your Apple Music app.",
+            "tags": [
+                "macOS",
+                "docker",
+                "fastapi",
+                "python",
+                "yt-dlp"
+            ],
+            "start_year": 2024,
+            "link": "https://github.com/sg-s/spotenstein"
+        },
+        {
+            "img": "./assets/sst.png",
+            "title": "SeaSurfaceTemperature",
+            "text": "MATLAB class to download sea surface temperatures from the NOAA website and present them in a sane manner.",
+            "tags": [
+                "MATLAB",
+                "NOAA"
+            ],
+            "start_year": 2017,
+            "end_year": 2020,
+            "link": "https://github.com/sg-s/pyvocab"
+        },
+        {
+            "text": "A python based vocabulary builder using /r/logophilia + streamlit.",
+            "title": "pyvocab",
+            "tags": [
+                "python",
+                "vocabulary",
+                "webapp",
+                "streamlit"
+            ],
+            "start_year": 2017,
+            "end_year": 2023,
+            "link": "https://github.com/sg-s/seasurfacetemperature"
+        },
+        {
+            "img": "./assets/puff.gif",
+            "text": "A simple (4-ODE, 4-parameter) model that describes the kinetics of the gas phase concentration of an odorant delivered using commmon laboratory techniques.",
+            "title": "puffmodel",
+            "tags": [
+                "MATLAB",
+                "Mathematica",
+                "neuroscience",
+                "olfaction",
+                "Drosophila",
+                "modelling",
+                "ODE"
+            ],
+            "start_year": 2015,
+            "end_year": 2019,
+            "links": [
+                {
+                    "key": "Code",
+                    "value": "https://github.com/sg-s/puff-model"
+                },
+                {
+                    "key": "paper in JEB",
+                    "value": "https://journals.biologists.com/jeb/article/222/23/jeb207787/223562/Controlling-and-measuring-dynamic-odorant-stimuli"
+                }
+            ]
+        },
+        {
+            "img": "./assets/puppeteer.gif",
+            "text": "A MATLAB class that can control ANYTHING. Make anything interactive and explorable.",
+            "title": "puppeteer",
+            "tags": [
+                "MATLAB",
+                "modelling",
+                "ODE",
+                "visualization"
+            ],
+            "start_year": 2015,
+            "end_year": 2021,
+            "link": "https://github.com/sg-s/puppeteer"
+        },
+        {
+            "text": "Tiny machine vision tool to track flies in a Drosophila behavioral assay",
+            "title": "flyspotter",
+            "tags": [
+                "machine-vision",
+                "MATLAB",
+                "animal-behavior",
+                "Drosophila",
+                "neuroscience"
+            ],
+            "start_year": 2020,
+            "end_year": 2021,
+            "links": [
+                {
+                    "key": "Code",
+                    "value": "https://github.com/sg-s/fly-spotter"
+                },
+                {
+                    "key": "paper in Cell Reports",
+                    "value": "https://www.sciencedirect.com/science/article/pii/S2211124722017442"
+                }
+            ]
+        },
+        {
+            "text": "a MATLAB class to help you bootstrap your image analysis problem.",
+            "title": "movieAnalyser",
+            "tags": [
+                "machine-vision",
+                "MATLAB"
+            ],
+            "start_year": 2011,
+            "end_year": 2021,
+            "link": "https://github.com/sg-s/movie-analyser"
+        },
+        {
+            "text": "Kitchen sink of MATLAB tools. Various other packages in MATLAB depend on this. ",
+            "title": "mtools",
+            "tags": [
+                "MATLAB"
+            ],
+            "start_year": 2011,
+            "end_year": 2021,
+            "link": "https://github.com/sg-s/srinivas.gs_mtools"
+        },
+        {
+            "img": "./assets/x-wide.png",
             "text": "The xolotl neuron and network simulator combines the speed of C++ code with the interactivity and easy of use of MATLAB. ",
             "title": "The xolotl simulator",
-            "badges": ["C++","simulator","ODE","neuroscience"],
-            "link": "https://xolotl.readthedocs.io/en/master/"
+            "tags": [
+                "C++",
+                "simulator",
+                "ODE",
+                "neuroscience",
+                "MATLAB"
+            ],
+            "start_year": 2017,
+            "end_year": 2023,
+            "links": [
+                {
+                    "key": "Documentation",
+                    "value": "https://xolotl.readthedocs.io/en/master/"
+                },
+                {
+                    "key": "Code",
+                    "value": "https://github.com/sg-s/xolotl"
+                },
+                {
+                    "key": "Paper",
+                    "value": "https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2018.00087/full"
+                }
+            ]
         },
         {
-            "img": "../assets/stg-embedding.png",
-            "text": "The xolotl neuron and network simulator combines the speed of C++ code with the interactivity and easy of use of MATLAB. ",
+            "text": "MATLAB wrapper of Dmitry Ulyanov's Multicore-TSNE.",
+            "title": "Multicore TSNE",
+            "tags": [
+                "C++",
+                "MATLAB",
+                "t-SNE"
+            ],
+            "start_year": "2016",
+            "link": "https://github.com/sg-s/Multicore-TSNE/"
+        },
+        {
+            "img": "./assets/spikesort.png",
+            "text": "modular, accurate, and fast spike sorting for extracellular recordings",
+            "title": "spikesort",
+            "tags": [
+                "MATLAB",
+                "Drosophila",
+                "neuroscience"
+            ],
+            "start_year": 2010,
+            "end_year": 2017,
+            "link": "https://github.com/sg-s/spikesort"
+        },
+        {
+            "text": "MATLAB class to view, manipulate and analyse skeletons of neurons (in .xml or .nml file formats)",
+            "title": "skeleton",
+            "tags": [
+                "MATLAB",
+                "neuroscience"
+            ],
+            "start_year": 2017,
+            "links": [
+                {
+                    "key": "Code",
+                    "value": "https://github.com/sg-s/skeleton"
+                }
+            ]
+        },
+        {
+            "img": "./assets/kontroller.png",
+            "text": "A programmable MATLAB-based DAQ. Automate your experiments. ",
+            "title": "kontroller",
+            "tags": [
+                "MATLAB",
+                "DAQ",
+                "neuroscience"
+            ],
+            "start_year": 2011,
+            "end_year": 2017,
+            "links": [
+                {
+                    "key": "Code",
+                    "value": "https://github.com/sg-s/kontroller"
+                }
+            ]
+        },
+        {
+            "img": "./assets/stg-hero.jpg",
+            "start_year": 2018,
+            "end_year": 2020,
+            "text": "Embedding 17TB of neural dynamics to uncover circuit dynamics during functional and pathological states",
             "title": "Embedding of neural dynamics",
-            "badges": ["t-SNE","dimensionality-reduction","feature-engineering","neuroscience"],
-            "link":  "../stg/index.html"
+            "tags": [
+                "t-SNE",
+                "dimensionality-reduction",
+                "feature-engineering",
+                "neuroscience",
+                "python",
+                "machine-learning",
+                "bokeh"
+            ],
+            "links": [
+                {
+                    "key": "Paper",
+                    "value": "https://elifesciences.org/articles/76579"
+                },
+                {
+                    "key": "Interactive visualization",
+                    "value": "https://srinivas.gs/stg/"
+                },
+                {
+                    "key": "Code",
+                    "value": "https://github.com/sg-s/stg-embedding/"
+                }
+            ]
         },
         {
-            "img": "../assets/stg-embedding.png",
-            "text": "A web-based interactive simulator that helps you understand your decision to do a PhD, and what it means for your financial well-being ",
+            "img": "../phd-or-phdont/assets/favicon.png",
+            "text": "A fun and interactive simulator that helps you understand your decision to do a PhD, and what it means for your financial well-being. Try it out!",
             "title": "PhD or PhDon't?",
-            "badges": ["streamlit","dimensionality-reduction","feature-engineering","neuroscience"],
-            "footer_text": "under construction"
-        },
-        {
-            "img": "../assets/pyvocab.png",
-            "text": "A small vocabulary builder you can play with in the browser ",
-            "title": "pyvocab",
-            "badges": ["streamlit","python"],
-            "link": "../apps/vocab/index.html"
-        },
-        {
-            "img": "../assets/mealcycle.png",
-            "text": "Don't know what to cook next? This little app cycles through your meals, so that you don't make the same thing over and over again.",
-            "title": "mealcycle",
-            "badges": ["streamlit","python"],
-            "link": "../apps/mealcycle/index.html",
-            "footer_text": "under construction"
+            "tags": [
+                "phd",
+                "visualization",
+                "bootstrap",
+                "javascript",
+                "web-components"
+            ],
+            "start_year": 2025,
+            "link": "../phd-or-phdont/"
         },
         {
             "img": "../assets/places/cambridge.png",
+            "start_year": 2022,
             "text": "A visualization of the places I have lived. Maps stripped of text and legends, just lines on a plane.",
             "title": "Places I have lived",
-            "badges": ["prettymaps","python"],
+            "tags": [
+                "prettymaps",
+                "maps",
+                "visualization"
+            ],
             "link": "./places-i-have-lived/index.html"
         },
         {
-            "img": "../assets/money.png",
-            "text": "The scale of the wealth of oligarchs is truly astronomical. A visualization to help come to terms with this.",
-            "title": "The astronomical wealth of oligarchs",
-            "badges": ["bokeh","python"],
-            "link": "./oligarch-wealth/index.html",
-            "footer_text": "under construction"
-        },
-        {
-            "img": "../assets/money.png",
             "text": "Spike sorting of extracellular recordings, specially tuned for recordings from the Stomatogastic Ganglion of crabs and lobsters",
-            "title": "crabsort",
-            "badges": ["MATLAB","neural networks","spike sorting","active learning"],
-            "link": "./oligarch-wealth/index.html",
-            "footer_text": "under construction"
+            "title": "🦀 crabsort",
+            "tags": [
+                "MATLAB",
+                "neural networks",
+                "machine-learning",
+                "pytorch",
+                "spike sorting",
+                "active learning"
+            ],
+            "link": "https://github.com/sg-s/crabsort",
+            "start_year": 2017,
+            "end_year": 2021
         },
         {
-            "img": "../assets/money.png",
-            "text": "A fully static Netflix-like home media server for your media collection",
-            "title": "uflix",
-            "badges": ["python","TMDB"],
-            "link": "./oligarch-wealth/index.html",
-            "footer_text": "under construction"
-        },
-        {
-            "img": "../assets/money.png",
             "text": "A MATLAB wrapper to talk to TD Ameritrade's Public API",
+            "start_year": 2019,
             "title": "TDAmeritrade MATLAB API",
-            "badges": ["MATLAB","TD Ameritrade","finance"],
+            "tags": [
+                "MATLAB",
+                "TD Ameritrade",
+                "finance"
+            ],
             "link": "https://github.com/sg-s/tdameritrade-matlab-api"
         },
         {
-            "img": "../assets/money.png",
-            "text": "A MATLAB wrapper to talk to TD Ameritrade's Public API",
+            "text": "A MATLAB wrapper to cURL",
             "title": "curlmex",
-            "badges": ["MATLAB","cURL","C"],
+            "start_year": 2017,
+            "tags": [
+                "MATLAB",
+                "cURL",
+                "C"
+            ],
             "link": "https://github.com/sg-s/curlmex"
+        },
+        {
+            "text": "An experiment to see if renting is better than buying (a house).",
+            "title": "rent or buy?",
+            "tags": [
+                "simulator",
+                "python"
+            ],
+            "start_year": 2019,
+            "link": "https://github.com/sg-s/rent-or-buy"
+        },
+        {
+            "img": "./assets/alicat.png",
+            "text": "MATLAB class to control Alicat MFCs over a USB port. ",
+            "title": "alicat-mfc",
+            "tags": [
+                "MATLAB",
+                "Alicat",
+                "hardware",
+                "PID-control",
+                "neuroscience"
+            ],
+            "start_year": 2014,
+            "end_year": 2017,
+            "link": "https://github.com/sg-s/alicat-mfc"
+        },
+        {
+            "img": "./assets/bbn.png",
+            "text": "Pedegogical tool what simulates a neuron and allows the student to perform experiments on it in silico ",
+            "title": "Black Box Neuron",
+            "tags": [
+                "MATLAB",
+                "teaching",
+                "C++",
+                "neuroscience"
+            ],
+            "start_year": 2019,
+            "end_year": 2021,
+            "link": "https://github.com/sg-s/black-box-neuron-public"
+        },
+        {
+            "text": "Handy MATLAB utility to switch between conda environments from within MATLAB ",
+            "title": "condalab",
+            "tags": [
+                "python",
+                "MATLAB",
+                "conda"
+            ],
+            "start_year": 2020,
+            "end_year": 2023,
+            "link": "https://github.com/sg-s/condalab"
+        },
+        {
+            "text": "Automatic type system that binds MATLAB code to C++ code. ",
+            "title": "cpplab",
+            "tags": [
+                "C++",
+                "MATLAB"
+            ],
+            "start_year": 2017,
+            "end_year": 2021,
+            "links": [
+                {
+                    "key": "Code",
+                    "value": "https://github.com/sg-s/cpplab"
+                },
+                {
+                    "key": "MATLAB File Exchange",
+                    "value": "https://www.mathworks.com/matlabcentral/fileexchange/89912-cpplab"
+                }
+            ]
+        },
+        {
+            "text": "Hash-based data management system. MATLAB and python offerings available.",
+            "title": "data-manager",
+            "tags": [
+                "MATLAB",
+                "python",
+                "data-management",
+                "neuroscience"
+            ],
+            "start_year": 2015,
+            "end_year": 2019,
+            "link": "https://github.com/sg-s/data-manager"
+        },
+        {
+            "text": "The largest pupblicly available dataset of Science Journal RSS feeds.",
+            "title": "science-journal-feeds",
+            "tags": [
+                "science",
+                "rss",
+                "python"
+            ],
+            "start_year": 2017,
+            "link": "https://github.com/sg-s/science-journal-feeds"
+        },
+        {
+            "img": "./assets/cryptoparty.png",
+            "text": "Everything you need to bootstrap your own cryptoparty.",
+            "title": "cryptoparty",
+            "tags": [
+                "cryptography",
+                "security",
+                "encryption"
+            ],
+            "start_year": 2016,
+            "link": "https://github.com/sg-s/cryptoparty"
+        },
+        {
+            "img": "./assets/do.png",
+            "text": "Pure python client for Drug Discovery Tools on Deep Origin ",
+            "title": "deeporigin-client",
+            "tags": [
+                "python",
+                "client",
+                "drug-discovery",
+                "rdkit",
+                "biotite"
+            ],
+            "start_year": 2024,
+            "links": [
+                {
+                    "key": "Documentation",
+                    "value": "https://client-docs.deeporigin.io/"
+                },
+                {
+                    "key": "Code",
+                    "value": "https://github.com/deeporiginbio/deeporigin-client"
+                }
+            ]
+        },
+        {
+            "text": "A MATLAB toolbox that fits a linear filter to time series data with one input and one output.",
+            "title": "fitFilter2Data",
+            "tags": [
+                "linear-nonlinear-models",
+                "neuroscience",
+                "Drosophila",
+                "time-series-analysis"
+            ],
+            "footer_text": "2017-2023",
+            "link": "https://github.com/sg-s/fitFilter2Data",
+            "start_year": 2011,
+            "end_year": 2015
         }
-  ]
+    ]
 }
