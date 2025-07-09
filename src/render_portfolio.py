@@ -56,10 +56,7 @@ def render_portfolio_cards(json_path="portfolio/index.json"):
     page_html = page_template.render(
         title=data.get("title", "Portfolio"),
         lead_paragraph=data.get("lead_paragraph", ""),
-        footer_text=data.get("footer_text", ""),
-        stylesheet="../css/star-bs.css",
         cards=cards_html,
-        tags=data.get("tags", []),
     )
     dir_path = os.path.dirname(json_path)
     index_html_path = os.path.join(dir_path, "index.html")
