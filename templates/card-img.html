@@ -1,0 +1,34 @@
+{% if link %}
+<a href="{{ link }}" class="text-decoration-none text-reset">
+    {% endif %}
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="{{ tags|join(',') }}">
+            <img src="{{ img }}" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">{{ title }}</h5>
+                <p class="card-text">{{ text }} </p>
+                {% if tags %}
+                <div class="mb-2">
+                    {% for tag in tags %}
+                    <span class="badge bg-light text-dark me-1">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% if list_group and list_group|length > 0 %}
+            <ul class="list-group list-group-flush">
+                {% for item in list_group %}
+                <li class="list-group-item">{{ item }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% if footer_text %}
+            <div class="card-footer text-body-secondary">
+                {{ footer_text }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% if link %}
+</a>
+{% endif %}

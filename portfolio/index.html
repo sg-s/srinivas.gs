@@ -4,440 +4,1243 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>srinivas.gs / Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
         @media (min-width: 1200px) {
-        .container {
-            max-width: 1000px;
+            .container {
+                max-width: 1400px;
+            }
         }
-    }
     </style>
-    <link rel="stylesheet" href="../css/star-bs.css">
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
 </head>
 
 <body>
-    <div id="top-content">
-        <div id="top-star">
-            <a href="http://srinivas.gs/">✪</a>
-        </div>
-        <div id="top-sgs">
-            Portfolio
-        </div>
-        <br>
-        <br>
-    </div>
-    <div class="container my-2">
-        <div class="w-50 mx-auto">
-            <p class="lead">I like making things. Most things never see the light of day, but here are a few things that have both made it across the finish line and are not private.<br><br></p>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="container">
+        <h1 class="mt-5 mb-4"><a href="https://srinivas.gs/" class="text-secondary text-decoration-none">srinivas.gs</a>
+            / Portfolio</h1>
+        <p class="lead mb-5">I like making things. This page is a collection of things I have made. Projects are sorted by start year. Click on a project to learn more.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" data-masonry="{&quot;percentPosition&quot;: true }">
             
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
             
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/X.png" class="img-fluid rounded-start" alt="...">
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="bootstrap,fastapi,javascript,web-components,uvicorn,postgres">
+            <img src="./assets/tahr.webp" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">tubearchivist-hr</h5>
+                <p class="card-text">A total rewrite of tubearchivist, a self-hosted YouTube archive, with support for tagging and embedding components in other apps. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">bootstrap</span>
+                    
+                    <span class="badge bg-light text-dark me-1">fastapi</span>
+                    
+                    <span class="badge bg-light text-dark me-1">javascript</span>
+                    
+                    <span class="badge bg-light text-dark me-1">web-components</span>
+                    
+                    <span class="badge bg-light text-dark me-1">uvicorn</span>
+                    
+                    <span class="badge bg-light text-dark me-1">postgres</span>
+                    
                 </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">The xolotl simulator</h5>
-                    <p class="card-text"><p>The xolotl neuron and network simulator combines the speed of C++ code with the interactivity and easy of use of MATLAB. </p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">C++</span>
-                        
-                        <span class="badge text-bg-light">simulator</span>
-                        
-                        <span class="badge text-bg-light">ODE</span>
-                        
-                        <span class="badge text-bg-light">neuroscience</span>
-                        
-                    </p>
-                </div>
+                
             </div>
             
-        </div>
-        
-            <a href="https://xolotl.readthedocs.io/en/master/" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/stg-embedding.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Embedding of neural dynamics</h5>
-                    <p class="card-text"><p>The xolotl neuron and network simulator combines the speed of C++ code with the interactivity and easy of use of MATLAB. </p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">t-SNE</span>
-                        
-                        <span class="badge text-bg-light">dimensionality-reduction</span>
-                        
-                        <span class="badge text-bg-light">feature-engineering</span>
-                        
-                        <span class="badge text-bg-light">neuroscience</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-        
-            <a href="../stg/index.html" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/stg-embedding.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">PhD or PhDon't?</h5>
-                    <p class="card-text"><p>A web-based interactive simulator that helps you understand your decision to do a PhD, and what it means for your financial well-being </p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">streamlit</span>
-                        
-                        <span class="badge text-bg-light">dimensionality-reduction</span>
-                        
-                        <span class="badge text-bg-light">feature-engineering</span>
-                        
-                        <span class="badge text-bg-light">neuroscience</span>
-                        
-                    </p>
-                </div>
-            </div>
             
             <div class="card-footer text-body-secondary">
-                under construction
+                ⚠️ in progress
             </div>
             
         </div>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/pyvocab.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">pyvocab</h5>
-                    <p class="card-text"><p>A small vocabulary builder you can play with in the browser </p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">streamlit</span>
-                        
-                        <span class="badge text-bg-light">python</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-        
-            <a href="../apps/vocab/index.html" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/mealcycle.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">mealcycle</h5>
-                    <p class="card-text"><p>Don't know what to cook next? This little app cycles through your meals, so that you don't make the same thing over and over again.</p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">streamlit</span>
-                        
-                        <span class="badge text-bg-light">python</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-            <div class="card-footer text-body-secondary">
-                under construction
-            </div>
-            
-        </div>
-        
-            <a href="../apps/mealcycle/index.html" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/places/cambridge.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Places I have lived</h5>
-                    <p class="card-text"><p>A visualization of the places I have lived. Maps stripped of text and legends, just lines on a plane.</p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">prettymaps</span>
-                        
-                        <span class="badge text-bg-light">python</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-        
-            <a href="./places-i-have-lived/index.html" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/money.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">The astronomical wealth of oligarchs</h5>
-                    <p class="card-text"><p>The scale of the wealth of oligarchs is truly astronomical. A visualization to help come to terms with this.</p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">bokeh</span>
-                        
-                        <span class="badge text-bg-light">python</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-            <div class="card-footer text-body-secondary">
-                under construction
-            </div>
-            
-        </div>
-        
-            <a href="./oligarch-wealth/index.html" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/money.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">crabsort</h5>
-                    <p class="card-text"><p>Spike sorting of extracellular recordings, specially tuned for recordings from the Stomatogastic Ganglion of crabs and lobsters</p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">MATLAB</span>
-                        
-                        <span class="badge text-bg-light">neural networks</span>
-                        
-                        <span class="badge text-bg-light">spike sorting</span>
-                        
-                        <span class="badge text-bg-light">active learning</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-            <div class="card-footer text-body-secondary">
-                under construction
-            </div>
-            
-        </div>
-        
-            <a href="./oligarch-wealth/index.html" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/money.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">uflix</h5>
-                    <p class="card-text"><p>A fully static Netflix-like home media server for your media collection</p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">python</span>
-                        
-                        <span class="badge text-bg-light">TMDB</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-            <div class="card-footer text-body-secondary">
-                under construction
-            </div>
-            
-        </div>
-        
-            <a href="./oligarch-wealth/index.html" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/money.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">TDAmeritrade MATLAB API</h5>
-                    <p class="card-text"><p>A MATLAB wrapper to talk to TD Ameritrade's Public API</p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">MATLAB</span>
-                        
-                        <span class="badge text-bg-light">TD Ameritrade</span>
-                        
-                        <span class="badge text-bg-light">finance</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-        
-            <a href="https://github.com/sg-s/tdameritrade-matlab-api" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-            <div class="col">
-    <div class="card mb-3 shadow-sm">
-        <div class="row g-0">
-
-            
-                <div class="col-md-4 mt-2 ml-2">
-                    <img src="../assets/money.png" class="img-fluid rounded-start" alt="...">
-                </div>
-            
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">curlmex</h5>
-                    <p class="card-text"><p>A MATLAB wrapper to talk to TD Ameritrade's Public API</p>
-</p>
-                    <p class="card-text">
-                        
-                        <span class="badge text-bg-light">MATLAB</span>
-                        
-                        <span class="badge text-bg-light">cURL</span>
-                        
-                        <span class="badge text-bg-light">C</span>
-                        
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-        
-            <a href="https://github.com/sg-s/curlmex" target="_blank" rel="noopener noreferrer" class="stretched-link"></a>
-        
-    </div>
-</div>
-            
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    </div>
-    <div id="footer">
-        <p>&#9733;<br>
-            Arlington<br>Summer 2023</p>
     </div>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            
+            
+<a href="https://github.com/sg-s/thagomizer" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="python">
+            <img src="./assets/thagomizer.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">thagomizer</h5>
+                <p class="card-text">General tools in python. Various other packages in python depend on this. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2025
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
 
+            
+            
+<a href="https://srinivas.gs/phd-or-phdont" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="phd,visualization,bootstrap,javascript,web-components">
+            <img src="../phd-or-phdont/assets/favicon.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">PhD or PhDon't?</h5>
+                <p class="card-text">A fun and interactive simulator that helps you understand your decision to do a PhD, and what it means for your financial well-being. Try it out! </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">phd</span>
+                    
+                    <span class="badge bg-light text-dark me-1">visualization</span>
+                    
+                    <span class="badge bg-light text-dark me-1">bootstrap</span>
+                    
+                    <span class="badge bg-light text-dark me-1">javascript</span>
+                    
+                    <span class="badge bg-light text-dark me-1">web-components</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2025
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
 
-        <script type="text/javascript">
-            var elem = document.querySelector('.row');
-            var msnry = new Masonry( elem, {
-              // options
-              itemSelector: '.col',
-              columnWidth: 20
-            });
+            
+            
+<a href="https://github.com/sg-s/spotenstein" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="macOS,docker,fastapi,python,yt-dlp">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">Spotenstein</h5>
+                <p class="card-text">A self-hosted tech stack that allows you to press a button on your browser when watching a YouTube video and having that audio be added to your Apple Music app. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">macOS</span>
+                    
+                    <span class="badge bg-light text-dark me-1">docker</span>
+                    
+                    <span class="badge bg-light text-dark me-1">fastapi</span>
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">yt-dlp</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2024
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
 
-            imagesLoaded( elem ).on( 'progress', function() {
-              // layout Masonry after each image loads
-              msnry.layout();
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="python,client,drug-discovery,rdkit,biotite">
+            <img src="./assets/do.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">deeporigin-client</h5>
+                <p class="card-text">Pure python client for Drug Discovery Tools on Deep Origin  </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">client</span>
+                    
+                    <span class="badge bg-light text-dark me-1">drug-discovery</span>
+                    
+                    <span class="badge bg-light text-dark me-1">rdkit</span>
+                    
+                    <span class="badge bg-light text-dark me-1">biotite</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://client-docs.deeporigin.io/" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+                
+                <li class="list-group-item"><a href="https://github.com/deeporiginbio/deeporigin-client" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2024
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+<a href="https://inscopix.github.io/ideas-docs/tools/idps/qc_html/example-qc-report.html" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="python,bokeh,neuroscience,visualization">
+            <img src="./assets/ideas-qc.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">IDEAS QC Report</h5>
+                <p class="card-text">Interactive QC report for the IDEAS project </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">bokeh</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                    <span class="badge bg-light text-dark me-1">visualization</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2022-2024
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://inscopix.github.io/ideas-docs/" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="python,mkdocs,neuroscience">
+            <img src="./assets/ideas-docs.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">IDEAS Docs</h5>
+                <p class="card-text">Documentation for the IDEAS project </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">mkdocs</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2022-2024
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="./places-i-have-lived/index.html" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="prettymaps,maps,visualization">
+            <img src="../assets/places/cambridge.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">Places I have lived</h5>
+                <p class="card-text">A visualization of the places I have lived. Maps stripped of text and legends, just lines on a plane. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">prettymaps</span>
+                    
+                    <span class="badge bg-light text-dark me-1">maps</span>
+                    
+                    <span class="badge bg-light text-dark me-1">visualization</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2022
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="python,neuroscience">
+            <img src="./assets/inscopix.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">pyisx</h5>
+                <p class="card-text">Pure python package for interacting with Inscopix data </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://github.com/inscopix/pyisx" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+                <li class="list-group-item"><a href="https://inscopix.github.io/pyisx/" target="_blank" rel="noopener noreferrer">Docs</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2021-2024
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="machine-vision,MATLAB,animal-behavior,Drosophila,neuroscience">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">flyspotter</h5>
+                <p class="card-text">Tiny machine vision tool to track flies in a Drosophila behavioral assay </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">machine-vision</span>
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">animal-behavior</span>
+                    
+                    <span class="badge bg-light text-dark me-1">Drosophila</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://github.com/sg-s/fly-spotter" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+                <li class="list-group-item"><a href="https://www.sciencedirect.com/science/article/pii/S2211124722017442" target="_blank" rel="noopener noreferrer">paper in Cell Reports</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2020-2021
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+<a href="https://github.com/sg-s/condalab" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="python,MATLAB,conda">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">condalab</h5>
+                <p class="card-text">Handy MATLAB utility to switch between conda environments from within MATLAB  </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">conda</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2020-2023
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/tdameritrade-matlab-api" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,TD Ameritrade,finance">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">TDAmeritrade MATLAB API</h5>
+                <p class="card-text">A MATLAB wrapper to talk to TD Ameritrade's Public API </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">TD Ameritrade</span>
+                    
+                    <span class="badge bg-light text-dark me-1">finance</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2019
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/rent-or-buy" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="simulator,python">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">rent or buy?</h5>
+                <p class="card-text">An experiment to see if renting is better than buying (a house). </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">simulator</span>
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2019
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/black-box-neuron-public" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,teaching,C++,neuroscience">
+            <img src="./assets/bbn.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">Black Box Neuron</h5>
+                <p class="card-text">Pedegogical tool what simulates a neuron and allows the student to perform experiments on it in silico  </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">teaching</span>
+                    
+                    <span class="badge bg-light text-dark me-1">C++</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2019-2021
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="t-SNE,dimensionality-reduction,feature-engineering,neuroscience,python,machine-learning,bokeh">
+            <img src="./assets/stg-hero.jpg" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">Embedding of neural dynamics</h5>
+                <p class="card-text">Embedding 17TB of neural dynamics to uncover circuit dynamics during functional and pathological states </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">t-SNE</span>
+                    
+                    <span class="badge bg-light text-dark me-1">dimensionality-reduction</span>
+                    
+                    <span class="badge bg-light text-dark me-1">feature-engineering</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">machine-learning</span>
+                    
+                    <span class="badge bg-light text-dark me-1">bokeh</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://elifesciences.org/articles/76579" target="_blank" rel="noopener noreferrer">Paper</a></li>
+                
+                <li class="list-group-item"><a href="https://srinivas.gs/stg/" target="_blank" rel="noopener noreferrer">Interactive visualization</a></li>
+                
+                <li class="list-group-item"><a href="https://github.com/sg-s/stg-embedding/" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2018-2020
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+<a href="https://github.com/sg-s/pyvocab" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,NOAA">
+            <img src="./assets/sst.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">SeaSurfaceTemperature</h5>
+                <p class="card-text">MATLAB class to download sea surface temperatures from the NOAA website and present them in a sane manner. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">NOAA</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2017-2020
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/seasurfacetemperature" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="python,vocabulary,webapp,streamlit">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">pyvocab</h5>
+                <p class="card-text">A python based vocabulary builder using /r/logophilia + streamlit. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">vocabulary</span>
+                    
+                    <span class="badge bg-light text-dark me-1">webapp</span>
+                    
+                    <span class="badge bg-light text-dark me-1">streamlit</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2017-2023
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="C++,simulator,ODE,neuroscience,MATLAB">
+            <img src="./assets/x-wide.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">The xolotl simulator</h5>
+                <p class="card-text">The xolotl neuron and network simulator combines the speed of C++ code with the interactivity and easy of use of MATLAB.  </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">C++</span>
+                    
+                    <span class="badge bg-light text-dark me-1">simulator</span>
+                    
+                    <span class="badge bg-light text-dark me-1">ODE</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://xolotl.readthedocs.io/en/master/" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+                
+                <li class="list-group-item"><a href="https://github.com/sg-s/xolotl" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+                <li class="list-group-item"><a href="https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2018.00087/full" target="_blank" rel="noopener noreferrer">Paper</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2017-2023
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,neuroscience">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">skeleton</h5>
+                <p class="card-text">MATLAB class to view, manipulate and analyse skeletons of neurons (in .xml or .nml file formats) </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://github.com/sg-s/skeleton" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2017
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+<a href="https://github.com/sg-s/crabsort" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,neural networks,machine-learning,pytorch,spike sorting,active learning">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">🦀 crabsort</h5>
+                <p class="card-text">Spike sorting of extracellular recordings, specially tuned for recordings from the Stomatogastic Ganglion of crabs and lobsters </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neural networks</span>
+                    
+                    <span class="badge bg-light text-dark me-1">machine-learning</span>
+                    
+                    <span class="badge bg-light text-dark me-1">pytorch</span>
+                    
+                    <span class="badge bg-light text-dark me-1">spike sorting</span>
+                    
+                    <span class="badge bg-light text-dark me-1">active learning</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2017-2021
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/curlmex" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,cURL,C">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">curlmex</h5>
+                <p class="card-text">A MATLAB wrapper to cURL </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">cURL</span>
+                    
+                    <span class="badge bg-light text-dark me-1">C</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2017
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="C++,MATLAB">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">cpplab</h5>
+                <p class="card-text">Automatic type system that binds MATLAB code to C++ code.  </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">C++</span>
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://github.com/sg-s/cpplab" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+                <li class="list-group-item"><a href="https://www.mathworks.com/matlabcentral/fileexchange/89912-cpplab" target="_blank" rel="noopener noreferrer">MATLAB File Exchange</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2017-2021
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+<a href="https://github.com/sg-s/science-journal-feeds" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="science,rss,python">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">science-journal-feeds</h5>
+                <p class="card-text">The largest pupblicly available dataset of Science Journal RSS feeds. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">science</span>
+                    
+                    <span class="badge bg-light text-dark me-1">rss</span>
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2017
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/Multicore-TSNE/" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="C++,MATLAB,t-SNE">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">Multicore TSNE</h5>
+                <p class="card-text">MATLAB wrapper of Dmitry Ulyanov's Multicore-TSNE. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">C++</span>
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">t-SNE</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2016
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/cryptoparty" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="cryptography,security,encryption">
+            <img src="./assets/cryptoparty.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">cryptoparty</h5>
+                <p class="card-text">Everything you need to bootstrap your own cryptoparty. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">cryptography</span>
+                    
+                    <span class="badge bg-light text-dark me-1">security</span>
+                    
+                    <span class="badge bg-light text-dark me-1">encryption</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2016
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,Mathematica,neuroscience,olfaction,Drosophila,modelling,ODE">
+            <img src="./assets/puff.gif" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">puffmodel</h5>
+                <p class="card-text">A simple (4-ODE, 4-parameter) model that describes the kinetics of the gas phase concentration of an odorant delivered using commmon laboratory techniques. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">Mathematica</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                    <span class="badge bg-light text-dark me-1">olfaction</span>
+                    
+                    <span class="badge bg-light text-dark me-1">Drosophila</span>
+                    
+                    <span class="badge bg-light text-dark me-1">modelling</span>
+                    
+                    <span class="badge bg-light text-dark me-1">ODE</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://github.com/sg-s/puff-model" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+                <li class="list-group-item"><a href="https://journals.biologists.com/jeb/article/222/23/jeb207787/223562/Controlling-and-measuring-dynamic-odorant-stimuli" target="_blank" rel="noopener noreferrer">paper in JEB</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2015-2019
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+<a href="https://github.com/sg-s/puppeteer" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,modelling,ODE,visualization">
+            <img src="./assets/puppeteer.gif" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">puppeteer</h5>
+                <p class="card-text">A MATLAB class that can control ANYTHING. Make anything interactive and explorable. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">modelling</span>
+                    
+                    <span class="badge bg-light text-dark me-1">ODE</span>
+                    
+                    <span class="badge bg-light text-dark me-1">visualization</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2015-2021
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/data-manager" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,python,data-management,neuroscience">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">data-manager</h5>
+                <p class="card-text">Hash-based data management system. MATLAB and python offerings available. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">python</span>
+                    
+                    <span class="badge bg-light text-dark me-1">data-management</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2015-2019
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/alicat-mfc" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,Alicat,hardware,PID-control,neuroscience">
+            <img src="./assets/alicat.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">alicat-mfc</h5>
+                <p class="card-text">MATLAB class to control Alicat MFCs over a USB port.  </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">Alicat</span>
+                    
+                    <span class="badge bg-light text-dark me-1">hardware</span>
+                    
+                    <span class="badge bg-light text-dark me-1">PID-control</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2014-2017
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/movie-analyser" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="machine-vision,MATLAB">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">movieAnalyser</h5>
+                <p class="card-text">a MATLAB class to help you bootstrap your image analysis problem. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">machine-vision</span>
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2011-2021
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/srinivas.gs_mtools" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">mtools</h5>
+                <p class="card-text">Kitchen sink of MATLAB tools. Various other packages in MATLAB depend on this.  </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2011-2021
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,DAQ,neuroscience">
+            <img src="./assets/kontroller.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">kontroller</h5>
+                <p class="card-text">A programmable MATLAB-based DAQ. Automate your experiments.  </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">DAQ</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item"><a href="https://github.com/sg-s/kontroller" target="_blank" rel="noopener noreferrer">Code</a></li>
+                
+            </ul>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2011-2017
+            </div>
+            
+        </div>
+    </div>
+    
+            
+            
+<a href="https://github.com/sg-s/fitFilter2Data" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="linear-nonlinear-models,neuroscience,Drosophila,time-series-analysis">
+            <img src="" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">fitFilter2Data</h5>
+                <p class="card-text">A MATLAB toolbox that fits a linear filter to time series data with one input and one output. </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">linear-nonlinear-models</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                    <span class="badge bg-light text-dark me-1">Drosophila</span>
+                    
+                    <span class="badge bg-light text-dark me-1">time-series-analysis</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2011-2015
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+            
+<a href="https://github.com/sg-s/spikesort" class="text-decoration-none text-reset">
+    
+    <div class="col">
+        <div class="card mx-2 shadow-sm" data-tags="MATLAB,Drosophila,neuroscience">
+            <img src="./assets/spikesort.png" class="card-img-top" alt="" crossorigin="anonymous">
+            <div class="card-body">
+                <h5 class="card-title">spikesort</h5>
+                <p class="card-text">modular, accurate, and fast spike sorting for extracellular recordings </p>
+                
+                <div class="mb-2">
+                    
+                    <span class="badge bg-light text-dark me-1">MATLAB</span>
+                    
+                    <span class="badge bg-light text-dark me-1">Drosophila</span>
+                    
+                    <span class="badge bg-light text-dark me-1">neuroscience</span>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="card-footer text-body-secondary">
+                2010-2017
+            </div>
+            
+        </div>
+    </div>
+    
+</a>
+
+            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var grid = document.querySelector('[data-masonry]');
+                if (!grid) return;
+                imagesLoaded(grid, function () {
+                    if (grid.masonry) {
+                        grid.masonry.layout();
+                    }
+                });
             });
         </script>
+    </div>
 </body>
 
 </html>

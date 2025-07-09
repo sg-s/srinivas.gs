@@ -1,4 +1,4 @@
-""" this script finds all readme.md files in this repo,
+"""this script finds all readme.md files in this repo,
 and converts them into HTML files for display"""
 
 import codecs
@@ -8,7 +8,7 @@ import markdown
 
 all_paths = []
 
-for root, dirs, files in os.walk("./"):
+for root, _, files in os.walk("./"):
     for file in files:
         if file.endswith("README.md"):
             all_paths.append(os.path.join(root, file))

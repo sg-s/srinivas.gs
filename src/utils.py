@@ -1,6 +1,5 @@
 """core utilities to make site"""
 
-
 import json
 import os
 from pathlib import Path
@@ -15,7 +14,7 @@ repo_root = Path(__file__).parent.parent
 
 @beartype
 def _get_template(name: str) -> jinja2.environment.Template:
-    """helper function to get a tempalte from a file"""
+    """helper function to get a template from a file"""
     template_dir = os.path.join(repo_root, "templates")
 
     template_file = os.path.join(template_dir, name + ".html")
@@ -30,7 +29,7 @@ def _get_template(name: str) -> jinja2.environment.Template:
 def json_to_html(json_file_loc: str) -> None:
     """this function converts a JSON file into a HTML file
 
-    the JSON file is exepected to have a list of items,
+    the JSON file is expected to have a list of items,
     and to specify a template to use.
     """
     with open(json_file_loc, "r") as file:
