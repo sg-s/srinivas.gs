@@ -157,7 +157,7 @@ Srinivas Gorur-Shandilya
 * [on Whistling](essays/whistling/) 
 * [Keeping Kissinger Secret](essays/kissinger/)
 * [on Aaron Swartz](essays/swartz/)
-
+* [on writing Python clients in the age of LLMs](essays/python-clients/)
 
 
 <a name = "talks"></a>
