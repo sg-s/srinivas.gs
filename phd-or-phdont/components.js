@@ -82,6 +82,12 @@ class TimelineSection extends HTMLElement {
             const val = parseInt(cycler.value || '0', 10);
             if (!isNaN(val)) total_length += val;
         });
+        // Never clobber a positive months="..." from HTML with 0: if cyclers are missing or not
+        // ready yet (upgrade order), total_length can be 0 and would break downstream logic
+        // (e.g. TaxesDisplay sums prior sections and would use year 2010).
+        if (total_length <= 0) {
+            return;
+        }
         this.setAttribute('months', total_length);
     }
 
@@ -580,29 +586,49 @@ class TaxesDisplay extends HTMLElement {
 
     _findSectionYear() {
         // Find parent timeline-section
-        let parent = this.parentElement;
-        while (parent && parent.tagName && parent.tagName.toLowerCase() !== 'timeline-section') {
-            parent = parent.parentElement;
+        let section = this.parentElement;
+        while (section && section.tagName && section.tagName.toLowerCase() !== 'timeline-section') {
+            section = section.parentElement;
         }
-        if (!parent) return null;
-        // Timeline starts at August 2010
-        const baseYear = 2010;
-        const baseMonth = 7; // 0-based (August)
-        // Sum months of all previous timeline-section siblings
-        let monthsOffset = 0;
-        let sibling = parent.previousElementSibling;
-        while (sibling) {
-            if (sibling.tagName && sibling.tagName.toLowerCase() === 'timeline-section') {
-                let months = parseInt(sibling.getAttribute('months') || '0', 10);
-                if (!isNaN(months)) monthsOffset += months;
+        if (!section) return null;
+        // Timeline origin: August 2010 (month index 7).
+        const timelineStart = new Date(2010, 7, 1);
+        // Sum lengths of all timeline-sections before this one in the same column (DOM order).
+        // Using the column's direct children is more reliable than previousElementSibling.
+        let sectionMonthsBefore = 0;
+        const column = section.closest('.main-col');
+        if (column) {
+            for (const child of column.children) {
+                if (child.tagName.toLowerCase() !== 'timeline-section') continue;
+                if (child === section) break;
+                const months = parseInt(child.getAttribute('months') || '0', 10);
+                if (!isNaN(months)) sectionMonthsBefore += months;
             }
-            sibling = sibling.previousElementSibling;
+        } else {
+            let sibling = section.previousElementSibling;
+            while (sibling) {
+                if (sibling.tagName && sibling.tagName.toLowerCase() === 'timeline-section') {
+                    const months = parseInt(sibling.getAttribute('months') || '0', 10);
+                    if (!isNaN(months)) sectionMonthsBefore += months;
+                }
+                sibling = sibling.previousElementSibling;
+            }
         }
-        // Calculate the start date for this section
-        let startMonth = baseMonth + monthsOffset;
-        let year = baseYear + Math.floor(startMonth / 12);
-        // let month = startMonth % 12; // If you need the month
-        return year;
+        // at-month of the card that contains this taxes-display (walk up; avoids closest quirks).
+        let atMonth = 0;
+        let el = this.parentElement;
+        while (el && el !== section) {
+            const t = el.tagName && el.tagName.toLowerCase();
+            if (t === 'timeline-card' || t === 'timeline-sidecap-card') {
+                const raw = parseInt(el.getAttribute('at-month') || '0', 10);
+                if (!isNaN(raw)) atMonth = raw;
+                break;
+            }
+            el = el.parentElement;
+        }
+        const d = new Date(timelineStart.getTime());
+        d.setMonth(d.getMonth() + sectionMonthsBefore + atMonth);
+        return d.getFullYear();
     }
 
     async _fetchTaxData() {
@@ -617,6 +643,60 @@ class TaxesDisplay extends HTMLElement {
 
     _onIncomeChange = () => {
         this._updateTax();
+    }
+
+    /**
+     * Resolve federal tax for `income` from a year's bracket table.
+     * Uses exact key match when present; otherwise linear interpolation between
+     * adjacent tabulated incomes, with linear extrapolation outside the range
+     * (clamped to non-negative, rounded to nearest dollar).
+     *
+     * @param {Record<string, number>} yearData Map of income string to tax owed.
+     * @param {number} income Annual gross income.
+     * @returns {number|undefined} Estimated tax, or undefined if no numeric brackets exist.
+     */
+    _taxFromBrackets(yearData, income) {
+        if (yearData[income] !== undefined && yearData[income] !== null) {
+            const direct = Number(yearData[income]);
+            if (!Number.isNaN(direct)) return direct;
+        }
+        const entries = Object.entries(yearData)
+            .map(([k, v]) => [parseInt(k, 10), Number(v)])
+            .filter(([k, v]) => !Number.isNaN(k) && !Number.isNaN(v));
+        if (entries.length === 0) return undefined;
+        entries.sort((a, b) => a[0] - b[0]);
+
+        const clampRound = (x) => Math.max(0, Math.round(x));
+
+        if (entries.length === 1) {
+            return entries[0][1];
+        }
+
+        const [k0, t0] = entries[0];
+        const [k1, t1] = entries[1];
+        const [kPrev, tPrev] = entries[entries.length - 2];
+        const [kLast, tLast] = entries[entries.length - 1];
+
+        if (income <= k0) {
+            const slope = (t1 - t0) / (k1 - k0);
+            return clampRound(t0 + (income - k0) * slope);
+        }
+        if (income >= kLast) {
+            const denom = kLast - kPrev;
+            const slope = denom === 0 ? 0 : (tLast - tPrev) / denom;
+            return clampRound(tLast + (income - kLast) * slope);
+        }
+
+        for (let i = 0; i < entries.length - 1; i++) {
+            const [ka, ta] = entries[i];
+            const [kb, tb] = entries[i + 1];
+            if (income <= kb) {
+                const denom = kb - ka;
+                const raw = denom === 0 ? ta : ta + ((income - ka) * (tb - ta)) / denom;
+                return clampRound(raw);
+            }
+        }
+        return tLast;
     }
 
     _updateTax() {
@@ -637,12 +717,12 @@ class TaxesDisplay extends HTMLElement {
             this._renderError(err);
             return;
         }
-        const tax = yearData[income];
+        const tax = this._taxFromBrackets(yearData, income);
         if (tax === undefined) {
-            const err = `[TaxesDisplay] No tax entry for income ${income} in year ${year}`;
+            const err = `[TaxesDisplay] No tax brackets for year ${year}`;
             console.error(err);
             this._renderError(err);
-            throw new Error(err);
+            return;
         }
         this.value = tax;
         console.log(`[TaxesDisplay] For year ${year}, income ${income}: tax = ${tax}`);

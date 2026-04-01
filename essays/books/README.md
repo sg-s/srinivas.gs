@@ -1,5 +1,3 @@
-[![](../../assets/banner.png)](http://srinivas.gs/)
-
 # On Books
 
 As a young boy, I had a strange, electric relationship with my books. 

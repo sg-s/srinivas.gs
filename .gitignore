@@ -1,3 +1,6 @@
+# Generated essay pages (build with: uv run python src/render_readmes.py)
+essays/**/index.html
+
 # python stuff
 *.pyc
 poetry.lock

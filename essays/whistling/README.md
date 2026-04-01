@@ -1,5 +1,3 @@
-[![](../../assets/banner.png)](http://srinivas.gs/)
-
 # On Whistling   
    
 When I was young, there was an old Parsi couple who lived across the stairwell in our block of flats. As old Mr. Taraporewala climbed painfully up the stairs, he’d whistle, sometimes mournful tunes or recent Hindi movie jingles, but most of his repertoire consisted of what I suspected were self compositions. Mr. Taraporewala was quite old, and rather decrepit, but his whistling was loud, and limpid. I could hear it when he climbed the first step, and would hear it till he went inside his house, where I supposed his wife shut him up.

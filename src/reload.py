@@ -24,8 +24,10 @@ server.watch("portfolio/index.html")
 server.watch("templates/card-img.html", "python src/render_portfolio.py")
 server.watch("templates/portfolio.html", "python src/render_portfolio.py")
 
-# Watch all markdown files and rebuild readmes when any change
+# Watch markdown, essay metadata, and essay template; rebuild README pages
 server.watch("**/*.md", "uv run python src/render_readmes.py")
+server.watch("essays/**/essay.json", "uv run python src/render_readmes.py")
+server.watch("templates/essay_page.html.j2", "uv run python src/render_readmes.py")
 
 # Serve the project root directory with live reload enabled
 server.serve(root=".", open_url_delay=1)

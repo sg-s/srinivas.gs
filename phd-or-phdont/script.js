@@ -42,6 +42,10 @@ typeSubtitle();
 
 
 // --- Vertical Ruler Logic ---
+// Timeline end date (fixed; was previously "today").
+const TIMELINE_END_YEAR = 2025;
+const TIMELINE_END_MONTH = 6; // July (0-based)
+
 // Draws a vertical ruler with month and year ticks, aligned to px/month logic
 function generateRuler(startMonth = 7, startYear = 2010) {
     const mainContent = document.querySelector('.main-content');
@@ -55,10 +59,9 @@ function generateRuler(startMonth = 7, startYear = 2010) {
     line.className = 'vertical-ruler-line';
     const pxPerMonth = getMonthsToPx();
 
-    // Calculate total months from start to now
-    const now = new Date();
-    const endYear = now.getFullYear();
-    const endMonth = now.getMonth();
+    // Calculate total months from start (Aug 2010) through end month (July 2025)
+    const endYear = TIMELINE_END_YEAR;
+    const endMonth = TIMELINE_END_MONTH;
     const totalMonths = (endYear - startYear) * 12 + (endMonth - startMonth) + 1;
     line.style.height = (totalMonths * pxPerMonth) + 'px';
     ruler.appendChild(line);

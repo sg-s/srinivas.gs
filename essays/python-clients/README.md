@@ -1,5 +1,3 @@
-[![](../../assets/banner.png)](http://srinivas.gs/)
-
 # Writing Python clients in the age of LLMs
 
 Writing a Python REST API client used to feel like one of those chores that started small and then quietly took over your life. I am here talking about the Before Times, when a transformer was still a gray box that stepped voltages, and when you could impress people with the code you wrote, with your own meat fingers. Back in these antediluvian and somewhat idyllic times, it started as follows: at first you just need one function for one route. Fine. You write it by hand. Maybe you grab a [curl](https://curl.se/) command from the docs and run it through something like [curlconverter](https://curlconverter.com/). You get a bit of Python out, clean it up, and move on.

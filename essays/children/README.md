@@ -1,5 +1,3 @@
-[![](../../assets/banner.png)](http://srinivas.gs/)
-
 # On *Children of Men*
 
 <div id ="rednoise">SPOILERS ABOUND</div>

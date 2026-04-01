@@ -1,5 +1,3 @@
-[![](../../assets/banner.png)](http://srinivas.gs/)
-
 # On Aaron Swartz
 
 > This essay was [originally published](https://yaledailynews.com/blog/2014/01/17/gorur-shandilya-penetrating-the-swartz-controversy/) on the *Yale Daily News*, and has been archived here for posterity. 

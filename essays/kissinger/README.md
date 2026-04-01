@@ -1,5 +1,3 @@
-[![](../../assets/banner.png)](http://srinivas.gs/)
-
 # Keeping Kissinger Secret
 
 > This essay was originally published in the [Yale Daily News](https://yaledailynews.com/blog/2014/03/28/keeping-kissinger-secret/), and is archived here for posterity. 
