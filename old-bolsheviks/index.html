@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Old Bolsheviks</title>
+  <link href="https://fonts.cdnfonts.com/css/kremlin" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="photo-pile photo-pile--header" id="headerPile" aria-hidden="true"></div>
+    <div class="header-grid">
+      <div class="hero-lockup">
+        <h1 class="hero-title">
+          <span class="hero-title-kicker">The extraordinary span of the</span>
+          <span class="hero-title-main">The Old<br>Bolsheviks</span>
+        </h1>
+        <p class="deck">
+          They were born into a world with serfdom and subsistence farming, lived through the the most horrifying invasion in the history of the world, beat it, and then died after seeing men and women in space, and probes on the planets and in the stars.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section class="people-strip-wrap" id="peopleStripWrap">
+    <div class="people-strip-scroller" id="peopleStripScroller">
+      <div class="people-strip" id="peopleStrip"></div>
+    </div>
+  </section>
+
+  <div class="timeline-scroll" id="timelineScroll">
+    <div class="timeline-stage" id="timelineStage">
+      <svg id="timelineRail" aria-hidden="true"></svg>
+      <svg id="timeline" role="img" aria-labelledby="chartTitle chartDesc"></svg>
+    </div>
+  </div>
+  <div class="tooltip" id="tooltip"></div>
+
+  <footer class="page-footer">
+    <div class="photo-pile photo-pile--footer" id="footerPile" aria-hidden="true"></div>
+  </footer>
+
+  <p class="sr-only" id="chartTitle">Old Bolsheviks vertical timeline</p>
+  <p class="sr-only" id="chartDesc">
+    A vertical timeline showing selected Old Bolshevik lifespans alongside major political, military, and cultural events.
+  </p>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

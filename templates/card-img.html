@@ -1,8 +1,5 @@
-{% if link %}
-<a href="{{ link }}" class="text-decoration-none text-reset">
-    {% endif %}
-    <div class="col">
-        <div class="card mx-2 shadow-sm" data-tags="{{ tags|join(',') }}">
+<div class="col">
+    <div class="card mx-2 shadow-sm" data-tags="{{ tags|join(',') }}">
             <img src="{{ img }}" class="card-img-top" alt="" crossorigin="anonymous">
             <div class="card-body">
                 <h5 class="card-title">{{ title }}</h5>
@@ -22,13 +19,13 @@
                 {% endfor %}
             </ul>
             {% endif %}
-            {% if footer_text %}
-            <div class="card-footer text-body-secondary">
-                {{ footer_text }}
-            </div>
-            {% endif %}
+        {% if footer_text %}
+        <div class="card-footer text-body-secondary">
+            {{ footer_text }}
         </div>
+        {% endif %}
+        {% if link %}
+        <a href="{{ link }}" class="stretched-link" aria-label="{{ title }}"></a>
+        {% endif %}
     </div>
-    {% if link %}
-</a>
-{% endif %}
+</div>

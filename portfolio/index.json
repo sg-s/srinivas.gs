@@ -5,6 +5,31 @@
     "footer_text": "Arlington<br>Summer 2023",
     "items": [
         {
+            "title": "Old Bolsheviks",
+            "img": "./assets/old-bolsheviks.png",
+            "text": "An interactive visualization of the extraordinary span of the Old Bolsheviks. Part II of my Timelines series. ",
+            "tags": [
+                "javascript"
+            ],
+            "link": "../old-bolsheviks/",
+            "links": [
+                {
+                    "key": "Part I: PhD or PhDon't?",
+                    "value": "../phd-or-phdont/"
+                }
+            ],
+            "start_year": "2026"
+        },
+        {
+            "title": "cymbal",
+            "img": "./assets/cymbal.png",
+            "text": "I'm sick and tired of the Apple Music desktop app. It's a victim of <a href='https://en.wikipedia.org/wiki/Enshittification'>enshittification</a>. So I built my own.",
+            "tags": [
+                "swift"
+            ],
+            "start_year": "⚠️ in progress"
+        },
+        {
             "title": "tubearchivist-hr",
             "img": "./assets/tahr.webp",
             "text": "A total rewrite of tubearchivist, a self-hosted YouTube archive, with support for tagging and embedding components in other apps.",
@@ -323,6 +348,12 @@
                 "bootstrap",
                 "javascript",
                 "web-components"
+            ],
+            "links": [
+                {
+                    "key": "Part II: Old Bolsheviks",
+                    "value": "../old-bolsheviks/"
+                }
             ],
             "start_year": 2025,
             "link": "../phd-or-phdont/"

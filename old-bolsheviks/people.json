@@ -1,0 +1,624 @@
+[
+    {
+        "birthYear": 1861,
+        "deathYear": 1936,
+        "fate": "pre",
+        "howDied": "",
+        "name": "Maria Iasneva-Golubeva",
+        "note": "Joined after the 1903 congress; died before the height of the Great Purge.",
+        "photoPath": "images/maria-iasneva-golubeva.webp",
+        "placeOfBirth": "Vetluga, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1864,
+        "deathYear": 1935,
+        "fate": "pre",
+        "howDied": "",
+        "name": "Anna Ulyanova",
+        "note": "Lenin's sister; party member since 1898.",
+        "photoPath": "images/anna-ulyanova.webp",
+        "placeOfBirth": "Nizhny Novgorod, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1865,
+        "deathYear": 1932,
+        "fate": "pre",
+        "howDied": "",
+        "name": "Peteris Stucka",
+        "note": "Latvian Bolshevik and legal theorist; supported the Bolsheviks in 1903.",
+        "photoPath": "images/peteris-stucka.webp",
+        "placeOfBirth": "Koknese, Latvia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1869,
+        "deathYear": 1946,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Pauls Dauge",
+        "note": "Arrested during the Great Purge, but survived.",
+        "photoPath": "images/dauge.webp",
+        "placeOfBirth": "Sauka, Latvia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1869,
+        "deathYear": 1939,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Nadezhda Krupskaya",
+        "note": "Lenin's partner and a major party educator; died of illness.",
+        "photoPath": "images/nadezhda-krupskaya.webp",
+        "placeOfBirth": "Saint Petersburg, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Joined Lenin in emigration after her release, living in Munich and then London before returning during the 1905 Revolution.",
+                "endYear": 1905,
+                "startYear": 1901,
+                "type": "exile"
+            },
+            {
+                "details": "Left Russia again after the failed 1905 Revolution and remained abroad until 1917, including work in France.",
+                "endYear": 1917,
+                "startYear": 1906,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1870,
+        "deathYear": 1924,
+        "fate": "pre",
+        "howDied": "Illness after a series of strokes.",
+        "name": "Vladimir Lenin",
+        "note": "Founder and leader of the Bolsheviks.",
+        "photoPath": "images/vladimir-lenin.webp",
+        "placeOfBirth": "Ulyanovsk, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "After Siberian exile, moved to Western Europe and worked from Munich, London, and Geneva until returning during the 1905 Revolution.",
+                "endYear": 1905,
+                "startYear": 1900,
+                "type": "exile"
+            },
+            {
+                "details": "Second long emigration after the defeat of the revolution; lived in European exile until returning after the February Revolution.",
+                "endYear": 1917,
+                "startYear": 1908,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1870,
+        "deathYear": 1926,
+        "fate": "pre",
+        "howDied": "",
+        "name": "Leonid Krasin",
+        "note": "Engineer, financier, and early Bolshevik organizer.",
+        "photoPath": "images/leonid-krasin.webp",
+        "placeOfBirth": "Kurgan, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "After arrest in Finland in 1908 and release for lack of evidence, emigrated to Berlin and remained abroad until rejoining the Bolsheviks in early 1918.",
+                "endYear": 1918,
+                "startYear": 1908,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1870,
+        "deathYear": 1928,
+        "fate": "pre",
+        "howDied": "",
+        "name": "Alexander Tsiurupa",
+        "note": "Old Bolshevik and Soviet food commissar.",
+        "photoPath": "images/alexander-tsiurupa.webp",
+        "placeOfBirth": "Oleshky, Ukraine",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1871,
+        "deathYear": 1933,
+        "fate": "pre",
+        "howDied": "",
+        "name": "Semyon Sereda",
+        "note": "Joined the Bolsheviks in 1903.",
+        "photoPath": "images/semyon-sereda.webp",
+        "placeOfBirth": "Setolovo, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1872,
+        "deathYear": 1959,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Gleb Krzhizhanovsky",
+        "note": "Old underground comrade of Lenin and GOELRO planner.",
+        "photoPath": "images/gleb-krzhizhanovsky.webp",
+        "placeOfBirth": "Samara, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1873,
+        "deathYear": 1960,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Cecilia Bobrovskaya",
+        "note": "Old Bolshevik organizer and memoirist.",
+        "photoPath": "images/bobrovskaya-cecilia.jpg",
+        "placeOfBirth": "Velizh, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1873,
+        "deathYear": 1955,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Vladimir Bonch-Bruyevich",
+        "note": "Administrator, writer, and early Bolshevik fixer.",
+        "photoPath": "images/vladimir-bonch-bruyevich.webp",
+        "placeOfBirth": "Moscow, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Emigrated to Switzerland in 1896, where he organized shipments of revolutionary literature and printing equipment back into Russia; returned in early 1905.",
+                "endYear": 1905,
+                "startYear": 1896,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1873,
+        "deathYear": 1966,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Elena Stasova",
+        "note": "One of the longest-lived Old Bolsheviks in this selection.",
+        "photoPath": "images/elena-stasova.webp",
+        "placeOfBirth": "Saint Petersburg, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Emigrated to Geneva in August 1905 to run the Bolshevik organization abroad while Lenin was in Russia; returned to St. Petersburg in January 1906.",
+                "endYear": 1906,
+                "startYear": 1905,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1874,
+        "deathYear": 1933,
+        "fate": "pre",
+        "howDied": "",
+        "name": "Sergey Gusev",
+        "note": "Founding member of the Bolshevik faction in 1903.",
+        "photoPath": "images/sergey-gusev.webp",
+        "placeOfBirth": "Sapozhok, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1874,
+        "deathYear": 1943,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Dmitry Ilyich Ulyanov",
+        "note": "Lenin's brother and an old underground activist.",
+        "photoPath": "images/dmitry-ilyich-ulyanov.webp",
+        "placeOfBirth": "Ulyanovsk, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1875,
+        "deathYear": 1946,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Mikhail Kalinin",
+        "note": "Long-serving Soviet head of state in formal terms.",
+        "photoPath": "images/mikhail-kalinin.webp",
+        "placeOfBirth": "Verkhnaya Troitsa, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1876,
+        "deathYear": 1951,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Maxim Litvinov",
+        "note": "Diplomat and foreign commissar; survived Stalin's terror years.",
+        "photoPath": "images/maxim-litvinov.webp",
+        "placeOfBirth": "Białystok, Poland",
+        "timelineAnnotations": [
+            {
+                "details": "Escaped imprisonment in 1901 and moved to Geneva, where he worked for Iskra before returning to Russia during the 1905 Revolution.",
+                "endYear": 1905,
+                "startYear": 1901,
+                "type": "exile"
+            },
+            {
+                "details": "Left Russia again amid arrests in 1906 and spent roughly a decade in emigration in Paris, Belfast, and London.",
+                "endYear": 1917,
+                "startYear": 1906,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1876,
+        "deathYear": 1947,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Rosalia Zemlyachka",
+        "note": "Prominent revolutionary and Soviet official.",
+        "photoPath": "images/rosalia-zemlyachka.webp",
+        "placeOfBirth": "Mogilev, Belarus",
+        "timelineAnnotations": [
+            {
+                "details": "After repeated arrests, emigrated in 1909 and remained abroad until her illegal return to Russia in 1914.",
+                "endYear": 1914,
+                "startYear": 1909,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1878,
+        "deathYear": 1953,
+        "fate": "survived",
+        "howDied": "Stroke.",
+        "name": "Joseph Stalin",
+        "note": "Old Bolshevik and Soviet leader from the late 1920s until 1953.",
+        "photoPath": "images/joseph-stalin.webp",
+        "placeOfBirth": "Gori, Georgia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1878,
+        "deathYear": 1958,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Grigory Petrovsky",
+        "note": "Old Bolshevik who outlived the purge years.",
+        "photoPath": "images/grigory-petrovsky.webp",
+        "placeOfBirth": "Pechenihy, Ukraine",
+        "timelineAnnotations": [
+            {
+                "details": "Forced to flee after the 1905 Revolution and spent a brief period in Germany before returning to Mariupol in 1907.",
+                "endYear": 1907,
+                "startYear": 1906,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1878,
+        "deathYear": 1945,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Vladimir Adoratsky",
+        "note": "Party intellectual and editor; survived the purges.",
+        "photoPath": "images/vladimir-adoratsky.webp",
+        "placeOfBirth": "Kazan, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "After deportation to Astrakhan province, emigrated to Geneva and later lived in Paris, London, Berlin, and Munich before returning in 1918.",
+                "endYear": 1918,
+                "startYear": 1906,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1880,
+        "deathYear": 1966,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Serafima Hopner",
+        "note": "Old Bolshevik who remained alive deep into the post-Stalin era.",
+        "photoPath": "images/serafima-hopner.webp",
+        "placeOfBirth": "Kherson, Ukraine",
+        "timelineAnnotations": [
+            {
+                "details": "Lived in emigration from 1910 until returning after the February Revolution.",
+                "endYear": 1917,
+                "startYear": 1910,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1880,
+        "deathYear": 1936,
+        "fate": "purged",
+        "howDied": "Suicide.",
+        "name": "Mikhail Tomsky",
+        "note": "Committed suicide before his show trial amid the purges.",
+        "photoPath": "images/mikhail-tomsky.webp",
+        "placeOfBirth": "Kolpino, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Arrested in 1908 and exiled to France; returned to Russia in 1909, was arrested again, and later sent to hard labour.",
+                "endYear": 1909,
+                "startYear": 1908,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1880,
+        "deathYear": 1948,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Nikolai Podvoisky",
+        "note": "Revolutionary organizer and military figure.",
+        "photoPath": "images/nikolai-podvoisky.webp",
+        "placeOfBirth": "Kunashivka, Ukraine",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1881,
+        "deathYear": 1975,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Lydia Fotiyeva",
+        "note": "The longest-lived figure in this selection.",
+        "photoPath": "images/lydia-fotiyeva.webp",
+        "placeOfBirth": "Ryazan, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1882,
+        "deathYear": 1964,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Nadezhda Kolesnikova",
+        "note": "Old Bolshevik active since 1904.",
+        "photoPath": "images/nadezhda-kolesnikova.webp",
+        "placeOfBirth": "Moscow, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1883,
+        "deathYear": 1936,
+        "fate": "purged",
+        "howDied": "Executed.",
+        "name": "Lev Kamenev",
+        "note": "Convicted at the Trial of the Sixteen and executed.",
+        "photoPath": "images/lev-kamenev.webp",
+        "placeOfBirth": "Moscow, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Went abroad in 1908 to assist Lenin and remained in emigration until returning to St. Petersburg in 1914, when he was arrested and sent to Siberia.",
+                "endYear": 1914,
+                "startYear": 1908,
+                "type": "exile"
+            },
+            {
+                "details": "Arrested again in December 1934 after the Kirov assassination, sentenced to prison in 1935, then retried at the first Moscow show trial and executed in August 1936.",
+                "endYear": 1936.65,
+                "startYear": 1934.92,
+                "type": "repression"
+            }
+        ]
+    },
+    {
+        "birthYear": 1883,
+        "deathYear": 1936,
+        "fate": "purged",
+        "howDied": "Executed.",
+        "name": "Grigory Zinoviev",
+        "note": "Executed in the first Moscow show trial.",
+        "photoPath": "images/grigory-zinoviev.webp",
+        "placeOfBirth": "Kropyvnytskyi, Ukraine",
+        "timelineAnnotations": [
+            {
+                "details": "Fled police repression and lived in political exile until returning during the 1905 Revolution.",
+                "endYear": 1905,
+                "startYear": 1901,
+                "type": "exile"
+            },
+            {
+                "details": "Left for Western Europe in 1908 and served as Lenin's close aide in exile until returning in 1917.",
+                "endYear": 1917,
+                "startYear": 1908,
+                "type": "exile"
+            },
+            {
+                "details": "Arrested again in December 1934 after the Kirov assassination, given a ten-year prison sentence in January 1935, then retried in August 1936 and executed after the Trial of the Sixteen.",
+                "endYear": 1936.65,
+                "startYear": 1934.92,
+                "type": "repression"
+            }
+        ]
+    },
+    {
+        "birthYear": 1883,
+        "deathYear": 1951,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Aleksei Badayev",
+        "note": "Worker deputy turned Soviet official.",
+        "photoPath": "images/aleksei-badayev.webp",
+        "placeOfBirth": "Yuryevo, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1883,
+        "deathYear": 1959,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Dmitry Manuilsky",
+        "note": "International communist functionary who survived the terror.",
+        "photoPath": "images/dmitry-manuilsky.webp",
+        "placeOfBirth": "Sviatets, Ukraine",
+        "timelineAnnotations": [
+            {
+                "details": "Escaped exile and reached Paris in 1907, where he remained politically active until returning to Russia in May 1917.",
+                "endYear": 1917,
+                "startYear": 1907,
+                "type": "exile"
+            }
+        ]
+    },
+    {
+        "birthYear": 1883,
+        "deathYear": 1938,
+        "fate": "purged",
+        "howDied": "Executed.",
+        "name": "Andrei Bubnov",
+        "note": "Arrested and shot during the Great Purge.",
+        "photoPath": "images/andrei-bubnov.webp",
+        "placeOfBirth": "Ivanovo, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Arrested by the NKVD on October 17, 1937, held through the purge investigations, and executed after a brief trial on August 1, 1938.",
+                "endYear": 1938.58,
+                "startYear": 1937.79,
+                "type": "repression"
+            }
+        ]
+    },
+    {
+        "birthYear": 1884,
+        "deathYear": 1974,
+        "fate": "survived",
+        "howDied": "",
+        "name": "Dora Lazurkina",
+        "note": "Spent 17 years in the Gulag and survived.",
+        "photoPath": "images/lazurkina.webp",
+        "placeOfBirth": "Novozybkov, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Arrested in August 1937 during the Leningrad purge and initially sentenced to five years of exile before the sentence was converted into imprisonment in the Gulag in 1939.",
+                "endYear": 1939.0,
+                "startYear": 1937.6,
+                "type": "repression"
+            },
+            {
+                "details": "Her 1937 sentence was converted into Gulag imprisonment in 1939. In 1949 the camp term gave way to exile in a settlement; she was released and rehabilitated in 1955.",
+                "endYear": 1949.0,
+                "startYear": 1939.0,
+                "type": "gulag"
+            }
+        ]
+    },
+    {
+        "birthYear": 1885,
+        "deathYear": 1925,
+        "fate": "pre",
+        "howDied": "Complications after surgery.",
+        "name": "Mikhail Frunze",
+        "note": "Bolshevik commander who died well before the Great Purge.",
+        "photoPath": "images/frunze.webp",
+        "placeOfBirth": "Bishkek, Kyrgyzstan",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1885,
+        "deathYear": 1937,
+        "fate": "purged",
+        "howDied": "Executed.",
+        "name": "Alexander Shliapnikov",
+        "note": "Executed after breaking with Stalin's line.",
+        "photoPath": "images/alexander-shliapnikov.webp",
+        "placeOfBirth": "Murom, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Emigrated in January 1908; lived and worked mainly in Paris until returning to Russia in April 1914.",
+                "endYear": 1914,
+                "startYear": 1908,
+                "type": "exile"
+            },
+            {
+                "details": "Forced out again by the war in 1914; worked through Scandinavia, London, and a short U.S. fundraising trip before returning in late 1916.",
+                "endYear": 1916,
+                "startYear": 1914,
+                "type": "exile"
+            },
+            {
+                "details": "Imprisoned in 1935 on alleged political crimes, refused to confess, and remained in custody until his execution on September 2, 1937.",
+                "endYear": 1937.67,
+                "startYear": 1935.0,
+                "type": "repression"
+            }
+        ]
+    },
+    {
+        "birthYear": 1885,
+        "deathYear": 1938,
+        "fate": "purged",
+        "howDied": "Executed.",
+        "name": "Nikolai Krylenko",
+        "note": "Old Bolshevik prosecutor and commissar, later executed.",
+        "photoPath": "images/nikolai-krylenko.webp",
+        "placeOfBirth": "Bekhteevo, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Fled possible re-arrest in early 1914, first to Austria and then to neutral Switzerland after the war began; Lenin sent him back to Russia in mid-1915.",
+                "endYear": 1915,
+                "startYear": 1914,
+                "type": "exile"
+            },
+            {
+                "details": "Arrested on January 31, 1938, removed from office, and executed on July 29, 1938, after a rapid purge investigation and trial.",
+                "endYear": 1938.58,
+                "startYear": 1938.08,
+                "type": "repression"
+            }
+        ]
+    },
+    {
+        "birthYear": 1886,
+        "deathYear": 1934,
+        "fate": "pre",
+        "howDied": "Assassinated.",
+        "name": "Sergei Kirov",
+        "note": "His assassination became Stalin's pretext for mass terror.",
+        "photoPath": "images/sergei-kirov.webp",
+        "placeOfBirth": "Urzhum, Russia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1886,
+        "deathYear": 1937,
+        "fate": "purged",
+        "howDied": "Suicide.",
+        "name": "Sergo Ordzhonikidze",
+        "note": "Officially a suicide, widely read as tied to purge pressure.",
+        "photoPath": "images/sergo-ordzhonikidze.webp",
+        "placeOfBirth": "Ghoresha, Georgia",
+        "timelineAnnotations": []
+    },
+    {
+        "birthYear": 1887,
+        "deathYear": 1939,
+        "fate": "purged",
+        "howDied": "Executed.",
+        "name": "Pavel Postyshev",
+        "note": "Party boss later executed in the purges.",
+        "photoPath": "images/pavel-postyshev.webp",
+        "placeOfBirth": "Ivanovo, Russia",
+        "timelineAnnotations": [
+            {
+                "details": "Arrested on February 21, 1938, during the Great Purge, held for a year in custody, and executed on February 26, 1939.",
+                "endYear": 1939.15,
+                "startYear": 1938.14,
+                "type": "repression"
+            }
+        ]
+    },
+    {
+        "birthYear": 1888,
+        "deathYear": 1935,
+        "fate": "pre",
+        "howDied": "",
+        "name": "Valerian Kuybyshev",
+        "note": "Senior Soviet planner who died before the main show trials.",
+        "photoPath": "images/valerian-kuybyshev.webp",
+        "placeOfBirth": "Omsk, Russia",
+        "timelineAnnotations": []
+    }
+]

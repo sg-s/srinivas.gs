@@ -24,7 +24,7 @@
         <h1 class="mt-5 mb-4"><a href="https://srinivas.gs/" class="text-secondary text-decoration-none">srinivas.gs</a>
             / {{ title }}</h1>
         <p class="lead mb-5">{{ lead_paragraph }}</p>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" data-masonry="{&quot;percentPosition&quot;: true }">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 masonry-grid">
             {% for card in cards %}
             {{ card }}
             {% endfor %}
@@ -35,12 +35,25 @@
         <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                var grid = document.querySelector('[data-masonry]');
+                var grid = document.querySelector(".masonry-grid");
                 if (!grid) return;
-                imagesLoaded(grid, function () {
-                    if (grid.masonry) {
-                        grid.masonry.layout();
-                    }
+
+                var masonry = new Masonry(grid, {
+                    percentPosition: true,
+                    itemSelector: ".col"
+                });
+
+                var imageLoader = imagesLoaded(grid);
+                imageLoader.on("progress", function () {
+                    masonry.layout();
+                });
+
+                imageLoader.on("always", function () {
+                    masonry.layout();
+                });
+
+                window.addEventListener("load", function () {
+                    masonry.layout();
                 });
             });
         </script>

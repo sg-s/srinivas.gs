@@ -1,0 +1,1005 @@
+[
+    {
+        "date": "March 3, 1861",
+        "details": "Tsar Alexander II abolished serfdom, a reform often presented as a progressive turning point. In practice, peasants still had to make redemption payments for land, and many allotments were too small or too poor to sustain families.",
+        "image": {
+            "angle": 1,
+            "image_path": "images/header-serfdom-abolished.webp",
+            "scale": 2.3,
+            "x_position": -280,
+            "y_position": 10
+        },
+        "label": "Serfdom abolished",
+        "lane": 0,
+        "link": "https://en.wikipedia.org/wiki/Emancipation_reform_of_1861",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1861.17
+    },
+    {
+        "date": "Apr 9, 1865",
+        "details": "Robert E. Lee surrendered to Ulysses S. Grant at Appomattox Court House, the act usually treated as the effective end of the American Civil War. ",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "American Civil War ends",
+        "lane": -3,
+        "link": "https://en.wikipedia.org/wiki/Appomattox_Campaign",
+        "width": 2.8,
+        "x-offset": 0,
+        "year": 1865.27
+    },
+    {
+        "date": "1870s-1880s",
+        "details": "Revolutionary populists known as the Narodniks tried to mobilize the peasantry through the \"Going to the People\" campaigns. When that strategy failed, parts of the movement turned toward conspiratorial violence.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Narodnik movement rises",
+        "lane": -3,
+        "link": "https://en.wikipedia.org/wiki/Narodniks",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1874.0
+    },
+    {
+        "date": "Apr 24, 1877",
+        "details": "Russia declared war on the Ottoman Empire in 1877, presenting itself as the defender of Balkan Christians and Slavic nationalism. The war reshaped southeastern Europe and fed the nationalist tensions that would continue to destabilize the region for decades.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/russo-turkish.webp",
+            "scale": 3,
+            "x_position": -200,
+            "y_position": -200
+        },
+        "label": "Russo-Turkish War begins",
+        "lane": 4,
+        "link": "https://en.wikipedia.org/wiki/Russo-Turkish_War_(1877%E2%80%931878)",
+        "width": 2.7,
+        "x-offset": 0,
+        "year": 1877.31
+    },
+    {
+        "date": "March 13, 1881",
+        "details": "Tsar Alexander II was assassinated in St. Petersburg by members of Narodnaya Volya.\n\nThe killing did not open the way to broader reform. Instead, it helped bring the reform era to a close and was followed by a harsher authoritarian turn under Alexander III.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/header-alexander-2.webp",
+            "scale": 2,
+            "x_position": -240,
+            "y_position": -10
+        },
+        "label": "Alexander II assassinated",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Alexander_II_of_Russia#Assassination",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1881.2
+    },
+    {
+        "date": "1881-1894",
+        "details": "Censorship tightened, and political dissent was repressed more aggressively. The regime also pursued Russification, suppressing non-Russian languages and cultures across the empire. ",
+        "image": {
+            "angle": -3,
+            "image_path": "images/header-alexander-3.webp",
+            "scale": 2,
+            "x_position": -200,
+            "y_position": 0
+        },
+        "label": "Repression under Alexander III",
+        "lane": 3,
+        "link": "https://en.wikipedia.org/wiki/Alexander_III_of_Russia",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1881.25
+    },
+    {
+        "date": "Aug 27, 1883",
+        "details": "The catastrophic eruption of Krakatoa produced one of the loudest sounds ever recorded and triggered tsunamis that killed tens of thousands. It became a global media event and a vivid reminder of how connected the late nineteenth-century world had become.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/the-scream.webp",
+            "scale": 2,
+            "x_position": -200,
+            "y_position": 0
+        },
+        "label": "Krakatoa erupts",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/1883_eruption_of_Krakatoa",
+        "width": 2.3,
+        "x-offset": 0,
+        "year": 1883.65
+    },
+    {
+        "date": "Nov 15, 1884",
+        "details": "European powers met in Berlin to formalize the rules of colonial expansion in Africa without any African representation. The conference accelerated the partition of the continent and helped turn imperial rivalry into a more systematized scramble for territory.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Berlin Conference opens",
+        "lane": 3,
+        "link": "https://en.wikipedia.org/wiki/Berlin_Conference",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1884.87
+    },
+    {
+        "date": "1891",
+        "details": "The famine of 1891-1892 exposed the weakness of the tsarist state as crop failure, disease, and official mismanagement spread across the empire. Relief work radicalized parts of the educated public and deepened the sense that the old regime was morally and politically bankrupt.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Russian famine begins",
+        "lane": -4,
+        "link": "https://en.wikipedia.org/wiki/Russian_famine_of_1891%E2%80%931892",
+        "width": 2.8,
+        "x-offset": 0,
+        "year": 1891.5
+    },
+    {
+        "date": "Sep 19, 1893",
+        "details": "New Zealand became the first self-governing country to grant women the right to vote in national elections. The reform quickly became an international point of reference for suffrage movements elsewhere.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "New Zealand women win the vote",
+        "lane": 0,
+        "link": "https://en.wikipedia.org/wiki/Women%27s_suffrage_in_New_Zealand",
+        "width": 2.8,
+        "x-offset": 0,
+        "year": 1893.72
+    },
+    {
+        "date": "Nov 1, 1894 (N.S.; Oct 20 O.S.)",
+        "details": "Nicholas II succeeded Alexander III and took the Russian throne as the empire's last tsar.\n\nHis accession briefly stirred hopes for a milder regime, but his reign would remain committed to autocracy and would end in abdication during the 1917 revolution.",
+        "image": {
+            "angle": -2,
+            "image_path": "images/header-nicholas.webp",
+            "scale": 3,
+            "x_position": -300,
+            "y_position": -100
+        },
+        "label": "Nicholas II takes throne",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Nicholas_II",
+        "width": 2.3,
+        "x-offset": 0,
+        "year": 1894.84
+    },
+    {
+        "date": "Dec 22, 1894",
+        "details": "Captain Alfred Dreyfus was convicted of treason in a case driven by anti-Semitism, secrecy, and fabricated evidence. The affair became a long political crisis that split France and exposed the fragility of republican justice and liberal institutions.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Dreyfus Affair begins",
+        "lane": 2,
+        "link": "https://en.wikipedia.org/wiki/Dreyfus_affair",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1894.97
+    },
+    {
+        "date": "July 10-11, 1895 (Gregorian)",
+        "details": "After refusing to swear allegiance to Nicholas II and burning their weapons, Doukhobor communities in Transcaucasia were attacked by Cossacks. The state then dispersed thousands into hostile villages, and many died from starvation and exposure.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Doukhobor crackdown after oath refusal",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Doukhobors",
+        "width": 2.8,
+        "x-offset": 0,
+        "year": 1895.53
+    },
+    {
+        "date": "Feb 8, 1904",
+        "details": "The Russo-Japanese War was the first conflict that led to the decisive defeat of a European power by an Asian power. It was an early indicator of the growing power of Japan and the deep structural problems of Imperial Russia.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/japanese-war.webp",
+            "scale": 3,
+            "x_position": 200,
+            "y_position": -200
+        },
+        "label": "Russo-Japanese War begins",
+        "lane": 0,
+        "link": "https://en.wikipedia.org/wiki/Russo-Japanese_War",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1904.11
+    },
+    {
+        "date": "Jan 22, 1905",
+        "details": "A large group of civilians, led by Georgy Gapon were were fired upon by soldiers of the Imperial Guard as they marched towards the Winter Palace to present a petition to Tsar Nicholas II. Hundreds were killed, and thousands arrested.",
+        "image": {
+            "angle": 2,
+            "image_path": "images/header-BloodySunday1905.webp",
+            "scale": 2,
+            "x_position": -250,
+            "y_position": 10
+        },
+        "label": "Bloody Sunday",
+        "lane": -2,
+        "link": "https://en.wikipedia.org/wiki/Bloody_Sunday_(1905)",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1905.06
+    },
+    {
+        "date": "June 27, 1905",
+        "details": "On 27 June 1905, the battleship Potemkin was at gunnery practice when many enlisted men refused to eat the borscht made from rotten meat infested with maggots. The second in command, Giliarovsky, was killed after he mortally wounded Grigory Vakulinchuk, one of the mutiny's leaders. The Potemkin flew the red flag and headed for Odessa.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/footer-960px-Vintage_Potemkin.webp",
+            "scale": 3,
+            "x_position": -300,
+            "y_position": 0
+        },
+        "label": "Potemkin mutiny",
+        "lane": 2,
+        "link": "https://en.wikipedia.org/wiki/Russian_battleship_Potemkin#Mutiny",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1905.49
+    },
+    {
+        "date": "June 30, 1908",
+        "details": "A massive explosion flattened forest over a huge area near the Tunguska River in Siberia, most likely after an asteroid or comet fragment burst in the atmosphere. It remains the largest impact event in recorded human history.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Tunguska event",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Tunguska_event",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1908.5
+    },
+    {
+        "date": "Nov 20, 1910",
+        "details": "Lev Nikolayevich Tolstoy, author, writer of War and Peace, dies at 82. During the Great Patriotic War, soldiers read War and Peace in Stalingrad.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/tolstoy.webp",
+            "scale": 3,
+            "x_position": 100,
+            "y_position": -200
+        },
+        "label": "Leo Tolstoy dies",
+        "lane": 2,
+        "link": "https://en.wikipedia.org/wiki/Leo_Tolstoy",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1910.89
+    },
+    {
+        "date": "July 28, 1914",
+        "details": "The first world war breaks out. Russia fights the Central powers, on the side of France and the United Kingdom.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "World War I begins",
+        "lane": -2,
+        "link": "https://en.wikipedia.org/wiki/World_War_I",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1914.57
+    },
+    {
+        "date": "Mar 8, 1917 (Gregorian; Feb 23 O.S.)",
+        "details": "On International Women's Day, as many as 90,000 female workers in Petrograd left their factory jobs and marched through the streets, shouting \"Bread\", \"Down with the autocracy!\", and \"Stop the War!\"",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Women's Day strike in Petrograd",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/February_Revolution",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1917.18
+    },
+    {
+        "date": "Mar 15, 1917",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Tsar abdicates",
+        "lane": 3,
+        "link": "https://en.wikipedia.org/wiki/Abdication_of_Nicholas_II",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1917.2
+    },
+    {
+        "date": "March 1917, Provisional Government",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Women gain suffrage",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Women%27s_suffrage#Russia",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1917.25
+    },
+    {
+        "date": "Nov 7, 1917 (Gregorian calendar)",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "October Revolution",
+        "lane": -2,
+        "link": "https://en.wikipedia.org/wiki/October_Revolution",
+        "width": 3.4,
+        "x-offset": 0,
+        "year": 1917.85
+    },
+    {
+        "date": "March 3, 1918",
+        "details": "The Treaty of Brest-Litovsk was signed, and the Eastern Front ceased to be an active war zone.\n\nUnder the treaty, Soviet Russia ceded 34% of the former empire's population, 54% of its industrial land, 89% of its coalfields, and 26% of its railroads.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Treaty of Brest-Litovsk",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1918.17
+    },
+    {
+        "date": "Mar 9, 1918",
+        "details": "The UK, USA and France invade Russia to overthrow the Bolsheviks. They are ultimately pushed back. The invasion make clear that even historical allies will invade Russia to preserve Imperial rule.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Allies invade northern Russia",
+        "lane": -5,
+        "link": "https://en.wikipedia.org/wiki/North_Russia_intervention",
+        "width": 2.5,
+        "x-offset": 0,
+        "year": 1918.19
+    },
+    {
+        "date": "Apr 5, 1918",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Japanese land at Vladivostok",
+        "lane": 3,
+        "link": "https://en.wikipedia.org/wiki/Siberian_intervention",
+        "width": 2.5,
+        "x-offset": 100,
+        "year": 1918.26
+    },
+    {
+        "date": "Sep 4, 1918",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "U.S. troops reach Arkhangelsk",
+        "lane": 2,
+        "link": "https://en.wikipedia.org/wiki/American_Expeditionary_Force,_North_Russia",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1918.68
+    },
+    {
+        "date": "Nov 11, 1918",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Armistice ends WWI",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918",
+        "width": 1.8,
+        "x-offset": 0,
+        "year": 1918.86
+    },
+    {
+        "date": "Spring 1921",
+        "details": "The famine of 1921-1922 emerged from drought, war communism, and the devastation left by years of civil war. It killed millions and exposed how badly revolution, requisitioning, and war had shattered the countryside and the food system.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Russian famine of 1921 begins",
+        "lane": -3,
+        "link": "https://en.wikipedia.org/wiki/Russian_famine_of_1921%E2%80%931922",
+        "width": 2.8,
+        "x-offset": 0,
+        "year": 1921.25
+    },
+    {
+        "date": "Oct 25-Dec 30, 1922",
+        "details": "The Red Army's capture of Vladivostok on October 25, 1922 is usually treated as the end of the Russian Civil War. Within weeks, on December 30, the Union of Soviet Socialist Republics was formally created.\n\nTaken together, these events marked the Bolsheviks' transition from revolutionary survival and civil war victory into a consolidated new state, built after years of destruction, famine, and political repression.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/coat-of-arms.webp",
+            "scale": 2,
+            "x_position": 100,
+            "y_position": -100
+        },
+        "label": "Civil War ends; USSR founded",
+        "lane": 2,
+        "link": "https://en.wikipedia.org/wiki/Treaty_on_the_Creation_of_the_Union_of_Soviet_Socialist_Republics",
+        "width": 2.9,
+        "x-offset": 0,
+        "year": 1922.9
+    },
+    {
+        "date": "Oct 28-31, 1922",
+        "details": "The March on Rome brought Benito Mussolini to power after King Victor Emmanuel III refused to stop the fascists and instead appointed him prime minister. It marked one of the earliest major fascist seizures of state power in interwar Europe.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Mussolini seizes power",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/March_on_Rome",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1922.83
+    },
+    {
+        "date": "Jan 21, 1924",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Lenin dies",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Vladimir_Lenin",
+        "width": 1.8,
+        "x-offset": 0,
+        "year": 1924.06
+    },
+    {
+        "date": "Approximate shorthand for the late-1920s turn",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Stalin consolidates power",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Joseph_Stalin%27s_rise_to_power",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1928.0
+    },
+    {
+        "date": "Oct 24, 1929",
+        "details": "The Wall Street crash of October 1929 is the usual marker for the start of the Great Depression. What followed was a global economic collapse marked by unemployment, bank failures, collapsing trade, and political radicalization across much of the world.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Great Depression begins",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Great_Depression",
+        "width": 2.7,
+        "x-offset": 0,
+        "year": 1929.81
+    },
+    {
+        "date": "March 12, 1930",
+        "details": "Mahatma Gandhi set out from Sabarmati Ashram on the Dandi Salt March to challenge the British salt tax. The march became one of the defining acts of mass nonviolent resistance in the Indian independence movement.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Dandi Salt March begins",
+        "lane": 3,
+        "link": "https://en.wikipedia.org/wiki/Salt_March",
+        "width": 2.5,
+        "x-offset": 0,
+        "year": 1930.19
+    },
+    {
+        "date": "Jan 30, 1933",
+        "details": "President Paul von Hindenburg appointed Adolf Hitler chancellor of Germany. Conservative elites believed they could control him, but the appointment opened the path to rapid Nazi dictatorship.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Hitler becomes chancellor",
+        "lane": -3,
+        "link": "https://en.wikipedia.org/wiki/Adolf_Hitler%27s_rise_to_power#Seizure_of_control_(1931%E2%80%931933)",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1933.08
+    },
+    {
+        "date": "July 17, 1936",
+        "details": "A military uprising against the Spanish Republic opened the Spanish Civil War. The conflict quickly became an international test ground for fascism, anti-fascism, bombing from the air, and Soviet-backed communist politics.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Spanish Civil War begins",
+        "lane": -4,
+        "link": "https://en.wikipedia.org/wiki/Spanish_Civil_War",
+        "width": 2.5,
+        "x-offset": 0,
+        "year": 1936.54
+    },
+    {
+        "date": "Jan 9, 1937",
+        "details": "After expulsion from the Soviet Union and years of exile across Turkey, France, and Norway, Leon Trotsky arrived in Mexico under the protection of Diego Rivera and Frida Kahlo. Mexico became the site of his last attempt to keep an anti-Stalinist revolutionary movement alive.",
+        "image": {
+            "angle": 1,
+            "image_path": "images/trotsky.webp",
+            "scale": 3,
+            "x_position": -300,
+            "y_position": 0
+        },
+        "label": "Trotsky reaches Mexico",
+        "lane": -2,
+        "link": "https://en.wikipedia.org/wiki/Leon_Trotsky#Exile_to_Mexico",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1937.05
+    },
+    {
+        "date": "Apr 26, 1937",
+        "details": "German and Italian aircraft bombed the Basque town of Guernica during the Spanish Civil War. The attack became one of the era's most famous symbols of deliberate terror from the air against civilians.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/guernica.webp",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Bombing of Guernica",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Bombing_of_Guernica",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1937.32
+    },
+    {
+        "date": "July 7, 1937",
+        "details": "A clash between Japanese and Chinese troops near Beijing escalated into the Marco Polo Bridge Incident. It is usually treated as the opening of the full-scale Second Sino-Japanese War, which soon fused into the wider world crisis.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Marco Polo Bridge Incident",
+        "lane": 4,
+        "link": "https://en.wikipedia.org/wiki/Marco_Polo_Bridge_Incident",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1937.52
+    },
+    {
+        "date": "March 12, 1938",
+        "details": "Nazi Germany annexed Austria in the Anschluss, destroying Austrian independence without a meaningful foreign response. The episode showed how weak the European powers' resistance to Hitler still was on the eve of war.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/anschluss.webp",
+            "scale": 2,
+            "x_position": -200,
+            "y_position": 0
+        },
+        "label": "Anschluss",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Anschluss",
+        "width": 2.0,
+        "x-offset": 0,
+        "year": 1938.19
+    },
+    {
+        "date": "May 11, 1939",
+        "details": "Fighting began along the Mongolian-Manchurian frontier in what became the Battles of Khalkhin Gol. The later Soviet victory over Japan helped shape Tokyo's decision to look south rather than attack Siberia in 1941.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/Khalkhin_Gol.webp",
+            "scale": 3,
+            "x_position": -300,
+            "y_position": 0
+        },
+        "label": "Battles of Khalkhin Gol begin",
+        "lane": 4,
+        "link": "https://en.wikipedia.org/wiki/Battles_of_Khalkhin_Gol",
+        "width": 2.7,
+        "x-offset": 0,
+        "year": 1939.36
+    },
+    {
+        "date": "Sep 1, 1939",
+        "details": "Germany invaded Poland, beginning World War II in Europe. The invasion shattered the last illusions of peace after Munich and triggered declarations of war by Britain and France two days later.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "World War II begins in Europe",
+        "lane": -3,
+        "link": "https://en.wikipedia.org/wiki/Invasion_of_Poland",
+        "width": 2.9,
+        "x-offset": 0,
+        "year": 1939.67
+    },
+    {
+        "date": "Aug 21, 1940",
+        "details": "Trotsky was murdered in Coyoacan after being attacked with an ice axe by the Stalinist agent Ramón Mercader. The killing showed how far Stalin was willing to extend Soviet power to eliminate a rival even in exile on another continent.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Trotsky assassinated",
+        "lane": -3,
+        "link": "https://en.wikipedia.org/wiki/Leon_Trotsky#Assassination",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1940.64
+    },
+    {
+        "date": "June 22, 1941",
+        "details": "Nazi Germany invades the Soviet Union in the largest invasion in the history of the world. Most of Soviet industrial capacity is destroyed, together with tens of millions of civilians and soldiers. ",
+        "image": {
+            "angle": 0,
+            "image_path": "images/barb.webp",
+            "scale": 3,
+            "x_position": 100,
+            "y_position": -200
+        },
+        "label": "Operation Barbarossa. The start of the Great Patriotic War",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+        "width": 3.0,
+        "x-offset": 0,
+        "year": 1941.47
+    },
+    {
+        "date": "Feb 2, 1943",
+        "details": "",
+        "image": {
+            "angle": 1,
+            "image_path": "images/red-october-factory.webp",
+            "scale": 3,
+            "x_position": -300,
+            "y_position": 0
+        },
+        "label": "Sixth Army surrenders at Stalingrad",
+        "lane": -3,
+        "link": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+        "width": 2.8,
+        "x-offset": 0,
+        "year": 1943.09
+    },
+    {
+        "date": "May 8-9, 1945",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "images/reichstag.webp",
+            "scale": 3,
+            "x_position": -200,
+            "y_position": 0
+        },
+        "label": "War ends in Europe",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Victory_in_Europe_Day",
+        "width": 1.9,
+        "x-offset": 0,
+        "year": 1945.36
+    },
+    {
+        "date": "Aug 29, 1949",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "First Soviet atomic bomb",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/RDS-1",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1949.66
+    },
+    {
+        "date": "Aug 12, 1953",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "First Soviet thermonuclear test",
+        "lane": 2,
+        "link": "https://en.wikipedia.org/wiki/RDS-6s",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1953.61
+    },
+    {
+        "date": "Nov 1, 1955",
+        "details": "This is the commonly used start date for the Vietnam War, marking the consolidation of conflict between communist North Vietnam and the U.S.-backed South. What began as a post-colonial struggle would grow into one of the central wars of the Cold War.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Vietnam War begins",
+        "lane": -4,
+        "link": "https://en.wikipedia.org/wiki/Vietnam_War",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1955.84
+    },
+    {
+        "date": "Oct 4, 1957",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "images/footer-sputnik.webp",
+            "scale": 3,
+            "x_position": -250,
+            "y_position": -50
+        },
+        "label": "Sputnik 1",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Sputnik_1",
+        "width": 2.2,
+        "x-offset": 0,
+        "year": 1957.76
+    },
+    {
+        "date": "Sep 14, 1959",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Luna 2 reaches the Moon",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Luna_2",
+        "width": 1.8,
+        "x-offset": 0,
+        "year": 1959.7
+    },
+    {
+        "date": "Apr 12, 1961",
+        "details": "Yuri Gagarin becomes the first person in space.",
+        "image": {
+            "angle": -3,
+            "image_path": "images/footer-yuri-35.webp",
+            "scale": 3,
+            "x_position": -230,
+            "y_position": 0
+        },
+        "label": "Gagarin orbits Earth",
+        "lane": -1,
+        "link": "https://en.wikipedia.org/wiki/Vostok_1",
+        "width": 2.8,
+        "x-offset": 0,
+        "year": 1961.28
+    },
+    {
+        "date": "June 16, 1963",
+        "details": "",
+        "image": {
+            "angle": 1,
+            "image_path": "images/footer-tereshkova.webp",
+            "scale": 3,
+            "x_position": 100,
+            "y_position": 0
+        },
+        "label": "Valentina Tereshkova is the first woman in space",
+        "lane": -5,
+        "link": "https://en.wikipedia.org/wiki/Vostok_6",
+        "width": 2.4,
+        "x-offset": 0,
+        "year": 1963.46
+    },
+    {
+        "date": "Mar 18, 1965",
+        "details": "Alexei Leonov conducts the first spacewalk, becoming the first person to leave the spacecraft in a 12-minute spacewalk.",
+        "image": {
+            "angle": 0,
+            "image_path": "images/footer-FirstSpaceWalk.webp",
+            "scale": 3,
+            "x_position": 100,
+            "y_position": 0
+        },
+        "label": "The first spacewalk",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Voskhod_2",
+        "width": 1.8,
+        "x-offset": 0,
+        "year": 1965.21
+    },
+    {
+        "date": "Mar 26, 1971",
+        "details": "The Bangladesh Liberation War began, following massacres of Bangladeshi civilians by Pakistani troops. The US sends Task Force 74 to support Pakistan. The Soviet Union deploys nuclear submarines to counter, forcing them to withdraw.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Bangladesh Liberation War begins",
+        "lane": 3,
+        "link": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War",
+        "width": 2.8,
+        "x-offset": 0,
+        "year": 1971.23
+    },
+    {
+        "date": "Sep 11, 1973",
+        "details": "The Chilean military overthrew Salvador Allende in a coup backed by the United States and led by Augusto Pinochet. The coup ushered in a dictatorship marked by executions, disappearances, torture, and exile.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Pinochet coup in Chile",
+        "lane": -2,
+        "link": "https://en.wikipedia.org/wiki/1973_Chilean_coup_d%27%C3%A9tat",
+        "width": 2.6,
+        "x-offset": 0,
+        "year": 1973.7
+    },
+    {
+        "date": "Apr 30, 1975",
+        "details": "The fall of Saigon marked the end of the Vietnam War and the collapse of South Vietnam. It became one of the defining symbols of U.S. defeat and a major turning point in Cold War history.",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "Vietnam War ends",
+        "lane": 1,
+        "link": "https://en.wikipedia.org/wiki/Fall_of_Saigon",
+        "width": 2.5,
+        "x-offset": 0,
+        "year": 1975.33
+    },
+    {
+        "date": "Dec 26, 1991",
+        "details": "",
+        "image": {
+            "angle": 0,
+            "image_path": "",
+            "scale": 1,
+            "x_position": 0,
+            "y_position": 0
+        },
+        "label": "USSR dissolves",
+        "lane": 0,
+        "link": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+        "width": 3.4,
+        "x-offset": 0,
+        "year": 1991.98
+    }
+]
