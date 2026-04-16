@@ -26,9 +26,10 @@ jobs:
         with:
           version: latest
 
-      - name: Install dependencies and render Markdown pages
+      - name: Install dependencies and render site
         run: |
           uv sync
+          uv run python src/render_portfolio.py
           uv run python src/render_readmes.py
 
       - name: Stage static site (exclude repo metadata)

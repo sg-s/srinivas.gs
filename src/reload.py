@@ -1,33 +1,84 @@
 """
-This script sets up a livereload server to automatically rebuild and reload parts of the website
-when certain files change. It watches for changes in portfolio data, templates, and markdown files,
-and triggers rebuilds or browser reloads as appropriate.
+Livereload dev server: rebuilds the site when sources change and reloads the browser.
+
+Root ``index.html`` comes from ``src/render_readmes.py`` (README + header + footer).
+The portfolio page comes from ``src/render_portfolio.py``. ``make serve`` runs this
+script, which performs a **full build once on startup** so ``index.html`` is never stale.
 
 Usage:
-    uv run src/reload.py
-
-The server will watch for changes and serve the site with live reloading enabled.
+    uv run python src/reload.py
 """
+
+from __future__ import annotations
+
+import subprocess
+from pathlib import Path
 
 from livereload import Server
 
-# Initialize the livereload server
-server = Server()
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
-# Watch the JSON file and rebuild the portfolio when it changes
-server.watch("portfolio/index.json", "python src/render_portfolio.py")
+_CMD_READMES = "uv run python src/render_readmes.py"
 
-# Watch the output HTML file and reload the browser when it changes
-server.watch("portfolio/index.html")
 
-# Watch template files and rebuild the portfolio when they change
-server.watch("templates/card-img.html", "python src/render_portfolio.py")
-server.watch("templates/portfolio.html", "python src/render_portfolio.py")
+def _run(*args: str) -> None:
+    subprocess.run(
+        ["uv", "run", "python", *args],
+        cwd=REPO_ROOT,
+        check=True,
+    )
 
-# Watch markdown, essay metadata, and essay template; rebuild README pages
-server.watch("**/*.md", "uv run python src/render_readmes.py")
-server.watch("essays/**/essay.json", "uv run python src/render_readmes.py")
-server.watch("templates/essay_page.html.j2", "uv run python src/render_readmes.py")
 
-# Serve the project root directory with live reload enabled
-server.serve(root=".", open_url_delay=1)
+def rebuild_portfolio() -> None:
+    _run("src/render_portfolio.py")
+
+
+def rebuild_readmes() -> None:
+    _run("src/render_readmes.py")
+
+
+def rebuild_all() -> None:
+    """Portfolio first (writes ``portfolio/index.html``), then all README-derived pages."""
+    rebuild_portfolio()
+    rebuild_readmes()
+
+
+def rebuild_from_portfolio_data() -> None:
+    """Homepage preview is embedded from ``portfolio/index.json``; refresh both steps."""
+    rebuild_all()
+
+
+if __name__ == "__main__":
+    rebuild_all()
+
+    server = Server()
+
+    # Portfolio JSON: homepage cards + portfolio page
+    server.watch("portfolio/index.json", rebuild_from_portfolio_data)
+
+    # Portfolio HTML output (reload after render_portfolio)
+    server.watch("portfolio/index.html")
+
+    # Card templates
+    server.watch("templates/card-img.html", rebuild_portfolio)
+    server.watch("templates/portfolio.html", rebuild_portfolio)
+    server.watch("templates/card-img-home.html", rebuild_readmes)
+
+    # Site shell for legacy README pages (including root index.html)
+    server.watch("header.html", rebuild_readmes)
+    server.watch("footer.html", rebuild_readmes)
+
+    # Markdown and essays
+    server.watch("**/*.md", _CMD_READMES)
+    server.watch("essays/**/essay.json", _CMD_READMES)
+    server.watch("templates/essay_page.html.j2", _CMD_READMES)
+
+    # Root page output and homepage-only CSS (reload browser when they change)
+    server.watch("index.html")
+    server.watch("css/portfolio-preview.css")
+
+    # Rebuild README pages when the readme renderer or portfolio helpers change
+    server.watch("src/render_readmes.py", rebuild_readmes)
+    server.watch("src/render_portfolio.py", rebuild_from_portfolio_data)
+
+    server.serve(root=".", open_url_delay=1)

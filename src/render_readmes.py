@@ -18,6 +18,8 @@ from pathlib import Path
 import markdown
 from jinja2 import Environment, FileSystemLoader
 
+from render_portfolio import render_homepage_portfolio_preview_html
+
 BANNER_MARKDOWN = "[![](../../assets/banner.png)](http://srinivas.gs/)"
 ESSAY_TEMPLATE = "essay_page.html.j2"
 
@@ -85,13 +87,32 @@ def _render_essay_readme(readme_path: Path, repo_root: Path) -> None:
     (essay_dir / "index.html").write_text(page_html, encoding="utf-8")
 
 
-def _render_legacy_readme(path: str) -> None:
+def _inject_portfolio_preview_into_html(
+    html: str, readme_path: Path, repo_root: Path
+) -> str:
+    """Expand ``<!--PORTFOLIO_PREVIEW-->`` in built HTML for the repository root README."""
+    marker = "<!--PORTFOLIO_PREVIEW-->"
+    if marker not in html:
+        return html
+    try:
+        rel = readme_path.resolve().relative_to(repo_root.resolve())
+    except ValueError:
+        return html
+    if rel.parts != ("README.md",):
+        return html
+
+    snippet = render_homepage_portfolio_preview_html(repo_root)
+    return html.replace(marker, snippet, 1)
+
+
+def _render_legacy_readme(path: str, repo_root: Path) -> None:
     """Original header + body + footer concatenation for non-essay README.md paths."""
     path_root = path.replace("README.md", "")
 
     input_file = codecs.open(path, mode="r", encoding="utf-8")
     text = input_file.read()
     html = _markdown_to_html(text)
+    html = _inject_portfolio_preview_into_html(html, Path(path), repo_root)
 
     body_path = path.replace("README.md", "body.html")
     output_file = codecs.open(body_path, "w", encoding="utf-8")
@@ -124,5 +145,5 @@ if __name__ == "__main__":
         if _is_essay_readme(readme_path, repo_root):
             _render_essay_readme(readme_path, repo_root)
         else:
-            _render_legacy_readme(path)
+            _render_legacy_readme(path, repo_root)
         print("✅ ")
